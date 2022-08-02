@@ -20,20 +20,19 @@ Welcome to follow and star!
 
 ## A Taxonomy of Exploration RL Algorithms
 
-We’ll start this section with a disclaimer: it’s really quite hard to draw an accurate, all-encompassing taxonomy of algorithms in the Exploration RL space, because the modularity of algorithms is not well-represented by a tree structure.
-We simply divide `Exploration RL`  into four categories: `classic`, `intrinsic reward based`, `memory based`, `others`.
+We simply divide `Exploration methods in RL` into four categories: `classic`, `intrinsic reward based`, `memory based`, `others`.
 Note that there may be overlap between these categories, and an algorithm may belong to several of them.
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/erl-taxonomy.png">
+    src="./assets/erl-taxonomy.png" width="200" height="200">
     <br>
     <center>A non-exhaustive, but useful taxonomy of algorithms in Exploration methods in RL.</center>
 </center>
 
-
-We give some examples algorithms for the different categories as shown in the figure above. There are links to algorithms in taxonomy.
+We give some examples algorithms for the different categories as shown in the figure above. 
+There are links to algorithms in taxonomy.
 
 >[1] [DQN-PixelCNN](https://arxiv.org/abs/1606.01868): Marc G. Bellemare et al, 2016  
 [2] [#Exploration](http://papers.neurips.cc/paper/6868-exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning.pdf) Haoran Tang et al, 2017  
