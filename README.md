@@ -26,7 +26,7 @@ Note that there may be overlap between these categories, and an algorithm may be
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/erl-taxonomy.png" width="200" height="200">
+    src="./assets/erl-taxonomy.png" width=50% height=50%>
     <br>
     <center>A non-exhaustive, but useful taxonomy of algorithms in Exploration methods in RL.</center>
 </center>
