@@ -22,14 +22,22 @@ Welcome to follow and star!
 ## A Taxonomy of Exploration RL Algorithms
 
 We simply divide `Exploration methods in RL` into four categories: `classic`, `intrinsic reward based`, `memory based`, `others`.
-Note that there may be overlap between these categories, and an algorithm may belong to several of them.
+
+- we divide `classic` into two categories: methods arise from traditional multi armed bandit problem 
+(`Epsilon-Greedy`, `Boltzman Exploration`，`Upper Confidence Bound`, `Thompson Sampling`) and methods that can be widely applied to deep reinforcement learning (`Entropy based`,
+`Noise based`)
+- we divide the `intrinsic reward based` into three categories according to the way the intrinsic reward is generated:
+`count based` (based on some forms of counting of states and/or actions), `prediction based` (based on the prediction error of the dynamic model), `information based` (based on the ideas of information theory such as mutual information).
+- `memory based` indicates that the methods explicitly uses the memory/storage of experience (current or previous episodes).
+
+> Note that there may be overlap between these categories, and an algorithm may belong to several of them.
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./assets/erl-taxonomy.png" width=50% height=50%>
     <br>
-    <center>A non-exhaustive, but useful taxonomy of algorithms in Exploration methods in RL.</center>
+    <center> A non-exhaustive, but useful taxonomy of algorithms in Exploration methods in RL. </center>
 </center>
 
 We give some examples algorithms for the different categories as shown in the figure above. 
@@ -41,11 +49,11 @@ There are links to algorithms in taxonomy.
 [4] [ICM](https://arxiv.org/abs/1705.05363): Deepak Pathak et al, 2018  
 [5] [RND](https://arxiv.org/abs/1810.12894): Yuri Burda et al, 2018  
 [6] [VIME](https://arxiv.org/abs/1605.09674): Rein Houthooft et al, 2016  
-[7] [EMI](https://openreview.net/forum?id=H1exf64KwH) (Exploration Policy Planning): Wang et al, 2019  
+[7] [EMI](https://openreview.net/forum?id=H1exf64KwH): Wang et al, 2019  
 [8] [DIYAN](https://arxiv.org/abs/1802.06070): Benjamin Eysenbach et al, 2019  
 [9] [NGU](https://arxiv.org/abs/2002.06038): Adrià Puigdomènech Badia et al, 2020  
 [10] [Agent57](https://arxiv.org/abs/2003.13350): Adrià Puigdomènech Badia et al, 2020  
-[11] [Go-Explora](https://www.nature.com/articles/s41586-020-03157-9): Adrien Ecoffet et al, 2021  
+[11] [Go-Explore](https://www.nature.com/articles/s41586-020-03157-9): Adrien Ecoffet et al, 2021  
 [12] [BootstrappedDQN](https://arxiv.org/abs/1602.04621): Ian Osband et al, 2016
 
 
@@ -73,13 +81,13 @@ format:
   - ExpEnv: None
 -->
 
-- [A Tutorial on Thompson Sampling](https://arxiv.org/pdf/1707.02038.pdf).
+- [A Tutorial on Thompson Sampling](https://arxiv.org/pdf/1707.02038.pdf)
   - Daniel J. Russo, Benjamin Van Roy, Abbas Kazerouni, Ian Osband, Zheng Wen
   - Key: Thompson sampling
   - ExpEnv: None
 
 - [An empirical evaluation of thompson sampling](http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf) *NeurIPS 2011*
-  - Olivier Chapelle, Lihong Li.
+  - Olivier Chapelle, Lihong Li
   - Key: Thompson sampling, empirical results
   - ExpEnv: None
 
@@ -100,7 +108,7 @@ format:
 
 - [\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning](http://papers.neurips.cc/paper/6868-exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning.pdf) *NeurIPS 2017*
   - Haoran Tang, Rein Houthooft, Davis Foote, Adam Stooke, Xi Chen, Yan Duan, John Schulman, Filip De Turck, Pieter Abbeel
-  - Key: hash conut, intrinsic motivation
+  - Key: hash cont, intrinsic motivation
   - ExpEnv: [rllab](https://github.com/rll/rllab), [Atari](https://github.com/openai/gym)
 
 - [EX2: Exploration with Exemplar Models for Deep Reinforcement Learning](https://papers.nips.cc/paper/2017/file/1baff70e2669e8376347efd3a874a341-Paper.pdf) *NeurIPS 2017*
@@ -120,7 +128,7 @@ format:
   
 - [Large-Scale Study of Curiosity-Driven Learning](https://arxiv.org/abs/1808.04355)  *ICLR 2019*
   - Yuri Burda, Harri Edwards & Deepak Pathak, Amos Storkey, Trevor Darrell, Alexei A. Efros
-  - Key:  curiosity, prediction error, purely curiosity-driven learning, feature spaces
+  - Key: curiosity, prediction error, purely curiosity-driven learning, feature spaces
   - ExpEnv: [Atari](https://github.com/openai/gym), [Super Mario Bros](https://supermario-game.com/)
 
 - [Diversity is all you need: Learning skills without a reward function](https://arxiv.org/abs/1802.06070) *ICLR 2019*
@@ -136,7 +144,7 @@ format:
 - [Self-Supervised Exploration via Disagreement](https://arxiv.org/abs/1906.04161) *ICML 2019*
   - Deepak Pathak, Dhiraj Gandhi, Abhinav Gupta
   - Key:  ensemble of dynamics models, maximize the disagreement of those ensembles, differentiable manner
-  - ExpEnv: [Atari](https://github.com/openai/gym), [MuJoCo](https://github.com/openai/mujoco-py), Unity, real robot
+  - ExpEnv: Noisy MNIST, [Atari](https://github.com/openai/gym), [MuJoCo](https://github.com/openai/mujoco-py), [Unity](https://unity.com/products/machine-learning-agents), real robot
 
 - [EMI: Exploration with Mutual Information](https://arxiv.org/abs/1810.01176) *ICML 2019*
   - Hyoungseok Kim, Jaekyeom Kim, Yeonwoo Jeong, Sergey Levine, Hyun Oh Song
@@ -146,7 +154,7 @@ format:
 - [RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments](https://openreview.net/pdf?id=rkg-TJBFPB) *ICLR 2020*
     - Roberta Raileanu, Tim Rocktäschel
     - Key: lead to significant changes in its learned state representation
-    - ExpEnv: MiniGrid
+    - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid)
 
 - [Never give up: Learning directed exploration strategies](https://arxiv.org/abs/2002.06038)  *ICLR 2020*
   - Adrià Puigdomènech Badia, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, Bilal Piot, Steven Kapturowski, Olivier Tieleman, Martín Arjovsky, Alexander Pritzel, Andew Bolt, Charles Blundell
@@ -161,12 +169,12 @@ format:
 - [Neural Contextual Bandits with UCB-based Exploration](https://arxiv.org/pdf/1911.04462.pdf) *ICML 2020*
   - Dongruo Zhou, Lihong Li, Quanquan Gu
   - Key:  stochastic contextual bandit,  neural network-based random feature, near-optimal regret guarantee
-  - ExpEnv: contextual bandits, UCI Machine Learning Repository, mnist
+  - ExpEnv: contextual bandits, UCI Machine Learning Repository, [MNIST](http://yann.lecun.com/exdb/mnist/)
 
 - [Rank the Episodes: A Simple Approach for Exploration in Procedurally-Generated Environments](https://arxiv.org/abs/2101.08152) *ICLR 2021*
   - Daochen Zha, Wenye Ma, Lei Yuan, Xia Hu, Ji Liu
   - Key: procedurally-generated environments, episodic exploration score from both per-episode and long-term views
-  - ExpEnv: MiniGrid, MiniWorld, MuJoCo
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), MiniWorld, MuJoCo
 
 - [First return then explore](https://www.nature.com/articles/s41586-020-03157-9) *Nature 2021*
   - Adrien Ecoffet, Joost Huizinga, Joel Lehman, Kenneth O. Stanley, Jeff Clune
@@ -189,7 +197,7 @@ format:
 - [Phasic Self-Imitative Reduction for Sparse-Reward Goal-Conditioned Reinforcement Learning](https://arxiv.org/abs/2206.12030) (Spotlight) 
   - Yunfei Li, Tian Gao, Jiaqi Yang, Huazhe Xu, Yi Wu
   - Key:  sparse-reward goal-conditioned, RL/SL phasic, task reduction
-  - ExpEnv: Sawyer Push, Ant Maze, Stacking
+  - ExpEnv: Sawyer Push, [Ant Maze](https://github.com/deepmind/dm_control), Stacking
 
 - [Thompson Sampling for (Combinatorial) Pure Exploration](https://arxiv.org/abs/2206.09150) (Spotlight)
   - Siwei Wang, Jun Zhu
@@ -232,17 +240,17 @@ format:
 - [Reinforcement Learning with Sparse Rewards using Guidance from Offline Demonstration](https://openreview.net/pdf?id=YJ1WzgMVsMt) (Spotlight: 8, 8, 8, 6, 6)
   - Desik Rengarajan, Gargi Vaidya, Akshay Sarvesh, Dileep Kalathil, Srinivas Shakkottai
   - Key: learning online with guidance offline
-  - ExpEnv: [MuJoCo](https://github.com/openai/mujoco-py), TurtleBot (Waypoint tracking, Obstacle avoidance)
+  - ExpEnv: [MuJoCo](https://github.com/openai/mujoco-py), [TurtleBot](https://www.turtlebot.com/) (Waypoint tracking, Obstacle avoidance)
 
 - [Generative Planning for Temporally Coordinated Exploration in Reinforcement Learning](https://openreview.net/pdf?id=YZHES8wIdE) (Spotlight: 8, 8, 8, 6)
   - Haichao Zhang, Wei Xu, Haonan Yu
   - Key: generative planning method, temporally coordinated exploration, crude initial plan
-  - ExpEnv: classic continuous control env, [CARLA](https://github.com/carla-simulator/carla)
+  - ExpEnv: [classic continuous control env](https://github.com/openai/gym), [CARLA](https://github.com/carla-simulator/carla)
 
 - [Learning Altruistic Behaviours in Reinforcement Learning without External Rewards](https://arxiv.org/abs/2107.09598) (Spotlight: 8, 8, 6, 6)
   - Tim Franzmeyer, Mateusz Malinowski, João F. Henriques
   - Key: altruistic behaviour, task-agnostic
-  - ExpEnv: grid env, [foraging](https://github.com/semitable/lb-foraging), multi-agent tag
+  - ExpEnv: grid world env, [foraging](https://github.com/semitable/lb-foraging), [multi-agent tag](https://github.com/Farama-Foundation/PettingZoo/tree/master/pettingzoo/mpe/simple_tag)
 
 - [Anti-Concentrated Confidence Bonuses for Scalable Exploration](https://arxiv.org/abs/2110.11202) (Poster: 8, 6, 5)
   - Jordan T. Ash, Cyril Zhang, Surbhi Goel, Akshay Krishnamurthy, Sham Kakade
@@ -261,8 +269,8 @@ format:
 
 - [Multi-Stage Episodic Control for Strategic Exploration in Text Games](https://openreview.net/forum?id=Ek7PSN7Y77z) (Spotlight: 8, 8, 6, 6)
   - Jens Tuyls, Shunyu Yao, Sham M. Kakade, Karthik R Narasimhan
-  - Key: multi-stage approach, policy decomposition, 
-  - ExpEnv: Jericho
+  - Key: multi-stage approach, policy decomposition
+  - ExpEnv: [Jericho](https://github.com/microsoft/jericho)
 
 - [On the Convergence of the Monte Carlo Exploring Starts Algorithm for Reinforcement Learning](https://openreview.net/forum?id=JzNB0eA2-M4)  (Poster: 8, 8, 5, 5)
   - Che Wang, Shuhan Yuan, Kai Shao, Keith Ross
@@ -279,7 +287,7 @@ format:
 
 - [Tactical Optimism and Pessimism for Deep Reinforcement Learning](https://arxiv.org/pdf/2102.03765.pdf) (Poster: 9, 7, 6, 6) 
   - Ted Moskovitz, Jack Parker-Holder, Aldo Pacchiano, Michael Arbel, Michael Jordan
-  - Key: Tactical Optimistic and Pessimistic estimation, multi-arm bandit problem.
+  - Key: Tactical Optimistic and Pessimistic estimation, multi-arm bandit problem
   - ExpEnv: [MuJoCo](https://github.com/openai/mujoco-py)
 
 - [Which Mutual-Information Representation Learning Objectives are Sufficient for Control?](https://arxiv.org/pdf/2106.07278.pdf) (Poster: 7, 6, 6, 5) 
@@ -300,7 +308,7 @@ format:
 - [Adversarial Intrinsic Motivation for Reinforcement Learning](https://arxiv.org/pdf/2105.13345.pdf) (Poster: 7, 7, 6) 
   - Ishan Durugkar, Mauricio Tec, Scott Niekum, Peter Stone
   - Key: the Wasserstein-1 distance, goal-conditioned, quasimetric, adversarial intrinsic motivation
-  - ExpEnv: Grid World, Fetch Robot
+  - ExpEnv: Grid World, Fetch Robot (based on [MuJoCo](https://github.com/openai/mujoco-py))
 
 - [Information Directed Reward Learning for Reinforcement Learning](https://arxiv.org/pdf/2102.12466.pdf) (Poster: 9, 8 7, 6) 
   - David Lindner, Matteo Turchetta, Sebastian Tschiatschek, Kamil Ciosek, Andreas Krause
@@ -309,7 +317,7 @@ format:
 
 - [Dynamic Bottleneck for Robust Self-Supervised Exploration](https://openreview.net/pdf?id=-t6TeG3A6Do) (Poster: 8, 6, 6, 6)
   - Chenjia Bai, Lingxiao Wang, Lei Han, Animesh Garg, Jianye Hao, Peng Liu, Zhaoran Wang
-  - Key: Dynamic Bottleneck, information gain, 
+  - Key: Dynamic Bottleneck, information gain
   - ExpEnv: [Atari](https://github.com/openai/gym)
 
 - [Hierarchical Skills for Efficient Exploration](https://arxiv.org/abs/2110.10809) (Poster: 7, 6, 6, 6)
@@ -325,7 +333,7 @@ format:
 - [NovelD: A Simple yet Effective Exploration Criterion](https://proceedings.neurips.cc/paper/2021/file/d428d070622e0f4363fceae11f4a3576-Paper.pdf) (Poster: 7, 6, 6, 6)
   - Tianjun Zhang, Huazhe Xu, Xiaolong Wang, Yi Wu, Kurt Keutzer, Joseph E. Gonzalez, Yuandong Tian
   - Key: weighting every novel area approximately equally
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), NetHack, [Atari](https://github.com/openai/gym)
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), [NetHack](https://github.com/NetHack/NetHack), [Atari](https://github.com/openai/gym)
 
 - [Episodic Multi-agent Reinforcement Learning with Curiosity-driven Exploration](https://arxiv.org/pdf/2111.11032.pdf) (Poster: 7, 6, 6, 5)
   - Lulu Zheng, Jiarui Chen, Jianhao Wang, Jiamin He, Yujing Hu, Yingfeng Chen, Changjie Fan, Yang Gao, Chongjie Zhang
