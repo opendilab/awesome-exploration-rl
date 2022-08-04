@@ -6,7 +6,9 @@ The repository will be continuously updated to track the frontier of ERL.
 Welcome to follow and star!
 
 The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
-In order to give readers an intuitive feeling for exploration, we provide a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid) below:
+In order to give readers an intuitive feeling for exploration, we provide a visualization of a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid) below.
+In this task, a series of actions to achieve the goal often require dozens or even hundreds of steps, in which the agent needs to fully explore different state-action spaces 
+in order to learn the skills required to achieve the goal.
 
 <center>
     <img style="border-radius: 0.3125em;
@@ -29,15 +31,26 @@ In order to give readers an intuitive feeling for exploration, we provide a typi
 
 
 ## A Taxonomy of Exploration RL Methods
+In general, we can divide reinforcement learning process into two phases: *collect* phase and *train* phase.
+In the *collect* phase, the agent chooses actions based on the current policy and then interacts with the environment to collect useful experience.
+In the *train* phase, the agent uses the collected experience to update the current policy to obtain a better performing policy.
 
-According to the phase the exploration component is explicitly applied, we simply divide the methods in `Exploration RL` into two main categories: `Augmented Collecting Strategy`, `Augmented Training Strategy`.
+According to the phase the exploration component is explicitly applied, we simply divide the methods in `Exploration RL` into two main categories: `Augmented Collecting Strategy`, `Augmented Training Strategy`:
 
-- we divide `Augmented Collecting Strategy` into four categories: 
-`Action Selection Permutation`, `Action Selection Guidance`, `State Selection Guidance`, `Parameter Space Permutation`.
+- `Augmented Collecting Strategy` represents a variety of different exploration strategies commonly used in the *collect* phase, which we further divide into *four* categories:
+  - `Action Selection Permutation`
+  - `Action Selection Guidance`
+  - `State Selection Guidance`
+  - `Parameter Space Permutation`
 
-- we divide `Augmented Training Strategy` into seven categories:
-`Count Based`, `Prediction Based`, `Information Theory Based`, `Entropy Augmented`, `Bayesian Posterior Based`, `Goal Based`, `(Expert)
-Demo Data`.
+- `Augmented Training Strategy` represents a variety of different exploration strategies commonly used in the *train* phase, which we further divide into *seven* categories:
+  - `Count Based`
+  - `Prediction Based`
+  - `Information Theory Based`
+  - `Entropy Augmented`
+  - `Bayesian Posterior Based`
+  - `Goal Based`
+  - `(Expert) Demo Data`
 
 > Note that there may be overlap between these categories, and an algorithm may belong to several of them.
 
