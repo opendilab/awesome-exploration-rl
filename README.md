@@ -11,7 +11,7 @@ In order to give readers an intuitive feeling for exploration, we provide a typi
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/minigrid_hard_exploration.png" width=50% height=50%>
+    src="./assets/minigrid_hard_exploration.png" width=100% height=100%>
     <br>
     <center>
     A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.
@@ -46,7 +46,7 @@ Demo Data`.
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/erl_taxonomy.png" width=50% height=50%>
+    src="./assets/erl_taxonomy.png" width=100% height=100%>
     <br>
     <center>
     A non-exhaustive, but useful taxonomy of methods in Exploration RL.
