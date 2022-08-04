@@ -1,15 +1,26 @@
 # Awesome Exploration Methods in Reinforcement Learning 
 
-The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
-
 Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. 
 
 Welcome to follow and star!
 
+The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
+In order to give readers an intuitive feeling for exploration, we provide a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid) below:
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/minigrid_hard_exploration.png" width=50% height=50%>
+    <br>
+    <center>
+    A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.
+    </center>
+</center>
+
 ## Table of Contents
 
-- [A Taxonomy of Exploration RL Algorithms](#a-taxonomy-of-exploration-rl-algorithms)
+- [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
   <!-- - [NeurIPS 2022](#nips-2022) (**<font color="red">New!!!</font>**)  -->
@@ -19,42 +30,49 @@ Welcome to follow and star!
 - [Contributing](#contributing)
 
 
-## A Taxonomy of Exploration RL Algorithms
+## A Taxonomy of Exploration RL Methods
 
-We simply divide `Exploration methods in RL` into four categories: `classic`, `intrinsic reward based`, `memory based`, `others`.
+According to the phase the exploration component is explicitly applied, we simply divide the methods in `Exploration RL` into two main categories: `Augmented Collecting Strategy`, `Augmented Training Strategy`.
 
-- we divide `classic` into two categories: methods arise from traditional multi armed bandit problem 
-(`Epsilon-Greedy`, `Boltzman Exploration`，`Upper Confidence Bound`, `Thompson Sampling`) and methods that can be widely applied to deep reinforcement learning (`Entropy based`,
-`Noise based`)
-- we divide the `intrinsic reward based` into three categories according to the way the intrinsic reward is generated:
-`count based` (based on some forms of counting of states and/or actions), `prediction based` (based on the prediction error of the dynamic model), `information based` (based on the ideas of information theory such as mutual information).
-- `memory based` indicates that the methods explicitly uses the memory/storage of experience (current or previous episodes).
+- we divide `Augmented Collecting Strategy` into four categories: 
+`Action Selection Permutation`, `Action Selection Guidance`, `State Selection Guidance`, `Parameter Space Permutation`.
+
+- we divide `Augmented Training Strategy` into seven categories:
+`Count Based`, `Prediction Based`, `Information Theory Based`, `Entropy Augmented`, `Bayesian Posterior Based`, `Goal Based`, `(Expert)
+Demo Data`.
 
 > Note that there may be overlap between these categories, and an algorithm may belong to several of them.
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/erl-taxonomy.png" width=50% height=50%>
+    src="./assets/erl_taxonomy.png" width=50% height=50%>
     <br>
-    <center> A non-exhaustive, but useful taxonomy of algorithms in Exploration methods in RL. </center>
+    <center>
+    A non-exhaustive, but useful taxonomy of methods in Exploration RL.
+    We provide some example methods for each of the different categories, shown in blue above.
+    </center>
 </center>
 
-We give some examples algorithms for the different categories as shown in the figure above. 
-There are links to algorithms in taxonomy.
-
->[1] [DQN-PixelCNN](https://arxiv.org/abs/1606.01868): Marc G. Bellemare et al, 2016  
-[2] [#Exploration](http://papers.neurips.cc/paper/6868-exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning.pdf) Haoran Tang et al, 2017  
-[3] [EX2](https://papers.nips.cc/paper/2017/file/1baff70e2669e8376347efd3a874a341-Paper.pdf): Justin Fu et al, 2017  
-[4] [ICM](https://arxiv.org/abs/1705.05363): Deepak Pathak et al, 2018  
-[5] [RND](https://arxiv.org/abs/1810.12894): Yuri Burda et al, 2018  
-[6] [VIME](https://arxiv.org/abs/1605.09674): Rein Houthooft et al, 2016  
-[7] [EMI](https://openreview.net/forum?id=H1exf64KwH): Wang et al, 2019  
-[8] [DIYAN](https://arxiv.org/abs/1802.06070): Benjamin Eysenbach et al, 2019  
-[9] [NGU](https://arxiv.org/abs/2002.06038): Adrià Puigdomènech Badia et al, 2020  
-[10] [Agent57](https://arxiv.org/abs/2003.13350): Adrià Puigdomènech Badia et al, 2020  
-[11] [Go-Explore](https://www.nature.com/articles/s41586-020-03157-9): Adrien Ecoffet et al, 2021  
-[12] [BootstrappedDQN](https://arxiv.org/abs/1602.04621): Ian Osband et al, 2016
+Here are links to papers on methods that appear in taxonomy:
+>[1] [Go-Explore](https://www.nature.com/articles/s41586-020-03157-9): Adrien Ecoffet et al, 2021  
+[2] [NoisyNet](https://openreview.net/pdf?id=rywHCPkAW), Meire Fortunato et al, 2018  
+[3] [DQN-PixelCNN](https://arxiv.org/abs/1606.01868): Marc G. Bellemare et al, 2016  
+[4] [#Exploration](http://papers.neurips.cc/paper/6868-exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning.pdf) Haoran Tang et al, 2017  
+[5] [EX2](https://papers.nips.cc/paper/2017/file/1baff70e2669e8376347efd3a874a341-Paper.pdf): Justin Fu et al, 2017  
+[6] [ICM](https://arxiv.org/abs/1705.05363): Deepak Pathak et al, 2018  
+[7] [RND](https://arxiv.org/abs/1810.12894): Yuri Burda et al, 2018  
+[8] [NGU](https://arxiv.org/abs/2002.06038): Adrià Puigdomènech Badia et al, 2020  
+[9] [Agent57](https://arxiv.org/abs/2003.13350): Adrià Puigdomènech Badia et al, 2020  
+[10] [VIME](https://arxiv.org/abs/1605.09674): Rein Houthooft et al, 2016    
+[11] [EMI](https://openreview.net/forum?id=H1exf64KwH): Wang et al, 2019  
+[12] [DIYAN](https://arxiv.org/abs/1802.06070): Benjamin Eysenbach et al, 2019  
+[13] [SAC](https://arxiv.org/abs/1801.01290): Tuomas Haarnoja et al, 2018  
+[14] [BootstrappedDQN](https://arxiv.org/abs/1602.04621): Ian Osband et al, 2016  
+[15] [PSRL](https://arxiv.org/pdf/1306.0940.pdf): Ian Osband et al, 2013  
+[16] [HER](https://arxiv.org/pdf/1707.01495.pdf) Marcin Andrychowicz et al, 2017  
+[17] [DQfD](https://arxiv.org/abs/1704.03732): Todd Hester et al, 2018  
+[18] [R2D3](https://arxiv.org/abs/1909.01387): Caglar Gulcehre et al, 2019  
 
 
 ## Papers
@@ -75,20 +93,30 @@ format:
   - ExpEnv: None
 
 <!-- 
-- [How can we define intrinsic motivation?](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.567.6524&rep=rep1&type=pdf) *Conf. on Epigenetic Robotics, 2008.*
+- [How can we define intrinsic motivation?](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.567.6524&rep=rep1&type=pdf) *Conf. on Epigenetic Robotics, 2008*
   - Pierre-Yves Oudeyer, Frederic Kaplan. 
   - Key: intrinsic motivation
   - ExpEnv: None
 -->
 
-- [A Tutorial on Thompson Sampling](https://arxiv.org/pdf/1707.02038.pdf)
-  - Daniel J. Russo, Benjamin Van Roy, Abbas Kazerouni, Ian Osband, Zheng Wen
-  - Key: Thompson sampling
-  - ExpEnv: None
+- [A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/abs/1003.0146) *WWW 2010*
+  - Lihong Li, Wei Chu, John Langford, Robert E. Schapire
+  - Key: LinUCB
+  - ExpEnv: Yahoo! Front Page Today Module dataset
+
+- [(More) Efficient Reinforcement Learning via Posterior Sampling](https://arxiv.org/pdf/1306.0940.pdf) *NeurIPS 2013*
+  - Ian Osband, Benjamin Van Roy, Daniel Russo
+  - Key:  prior distribution, posterior sampling
+  - ExpEnv: RiverSwim
 
 - [An empirical evaluation of thompson sampling](http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling.pdf) *NeurIPS 2011*
   - Olivier Chapelle, Lihong Li
   - Key: Thompson sampling, empirical results
+  - ExpEnv: None
+
+- [A Tutorial on Thompson Sampling](https://arxiv.org/pdf/1707.02038.pdf) *arxiv 2017*
+  - Daniel J. Russo, Benjamin Van Roy, Abbas Kazerouni, Ian Osband, Zheng Wen
+  - Key: Thompson sampling
   - ExpEnv: None
 
 - [Unifying Count-Based Exploration and Intrinsic Motivation](https://arxiv.org/abs/1606.01868) *NeurIPS 2016*
@@ -96,12 +124,12 @@ format:
   - Key: intrinsic motivation, density models, pseudo-count
   - ExpEnv: [Atari](https://github.com/openai/gym)
 
-- [Deep Exploration via Bootstrapped DQN](https://arxiv.org/abs/1602.04621)  *NeurIPS 2016*
+- [Deep Exploration via Bootstrapped DQN](https://arxiv.org/abs/1602.04621) *NeurIPS 2016*
   - Ian Osband, Charles Blundell, Alexander Pritzel, Benjamin Van Roy
   - Key: temporally-extended (or deep) exploration, randomized value functions, bootstrapped DQN
   - ExpEnv: [Atari](https://github.com/openai/gym)
 
-- [VIME: Variational information maximizing exploration](https://arxiv.org/abs/1605.09674)  *NeurIPS 2016*
+- [VIME: Variational information maximizing exploration](https://arxiv.org/abs/1605.09674) *NeurIPS 2016*
   - Rein Houthooft, Xi Chen, Yan Duan, John Schulman, Filip De Turck, Pieter Abbeel
   - Key: maximization of information gain, belief of environment dynamics, variational inference in Bayesian neural networks
   - ExpEnv: [rllab](https://github.com/rll/rllab)
@@ -116,15 +144,35 @@ format:
    - Key: novelty detection, discriminatively trained exemplar models, implicit density estimation
    - ExpEnv: [VizDoom](https://github.com/mwydmuch/ViZDoom), [Atari](https://github.com/openai/gym)
 
+- [Hindsight Experience Replay](https://arxiv.org/pdf/1707.01495.pdf) *NeurIPS 2017*
+  - Marcin Andrychowicz, Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel, Wojciech Zaremba
+  - Key: hindsight experience replay, implicit curriculum
+  - ExpEnv: pushing, sliding, pick-and-place, physical robot
+
 - [Curiosity-driven exploration by self-supervised prediction](https://arxiv.org/abs/1705.05363) *ICML 2017*
   - Deepak Pathak, Pulkit Agrawal, Alexei A. Efros, Trevor Darrell
   - Key: curiosity, self-supervised inverse dynamics model
   - ExpEnv: [VizDoom](https://github.com/mwydmuch/ViZDoom), [Super Mario Bros](https://supermario-game.com/)
 
+- [Deep Q-learning from Demonstrations](https://arxiv.org/abs/1704.03732) *AAAI 2018*
+  - Todd Hester, Matej Vecerik, Olivier Pietquin, Marc Lanctot, Tom Schaul, Bilal Piot, Dan Horgan, John Quan, Andrew Sendonaris, Gabriel Dulac-Arnold, Ian Osband, John Agapiou, Joel Z. Leibo, Audrunas Gruslys
+  - Key: combining temporal difference updates with supervised classification of the demonstrator’s actions
+  - ExpEnv: [Atari](https://github.com/openai/gym)
+
+- [Noisy Networks For Exploration](https://openreview.net/pdf?id=rywHCPkAW) *ICLR 2018*
+    - Meire Fortunato, Mohammad Gheshlaghi Azar, Bilal Piot, Jacob Menick, Matteo Hessel, Ian Osband, Alex Graves, Volodymyr Mnih, Remi Munos, Demis Hassabis, Olivier Pietquin, Charles Blundell, Shane Legg
+    - Key: learned parametric noise
+    - ExpEnv: [Atari](https://github.com/openai/gym)
+
 - [Exploration by random network distillation](https://arxiv.org/abs/1810.12894) *ICLR 2018*
   - Yuri Burda, Harrison Edwards, Amos Storkey, Oleg Klimov
   - Key: random network distillation
   - ExpEnv: [Atari](https://github.com/openai/gym)
+
+- [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290)  *ICML 2018*
+  - Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, Sergey Levine
+  - Key: soft actor critic, maximum entropy, policy iteration
+  - ExpEnv: [MuJoCo](https://github.com/openai/mujoco-py)
   
 - [Large-Scale Study of Curiosity-Driven Learning](https://arxiv.org/abs/1808.04355)  *ICLR 2019*
   - Yuri Burda, Harri Edwards & Deepak Pathak, Amos Storkey, Trevor Darrell, Alexei A. Efros
@@ -151,12 +199,22 @@ format:
   - Key: embedding representation of states and actions, forward prediction, mutual information
   - ExpEnv: [Atari](https://github.com/openai/gym), [MuJoCo](https://github.com/openai/mujoco-py)
 
+- [Making Efficient Use of Demonstrations to Solve Hard Exploration Problems](https://arxiv.org/abs/1909.01387) *arxiv 2019*
+    - Caglar Gulcehre, Tom Le Paine, Bobak Shahriari, Misha Denil, Matt Hoffman, Hubert Soyer, Richard Tanburn, Steven Kapturowski, Neil Rabinowitz, Duncan Williams, Gabriel Barth-Maron, Ziyu Wang, Nando de Freitas
+    - Key: R2D2, makes efficient use of demonstrations, hard exploration problems
+    - ExpEnv: [Atari](https://github.com/openai/gym)
+
+- [Optimistic Exploration even with a Pessimistic Initialisation](http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/rashidiclr20.pdf) *ICLR 2020*
+    - Tabish Rashid, Bei Peng, Wendelin Böhmer, Shimon Whiteson
+    - Key: pessimistically initialised Q-values, count-derived bonuses, optimism during both action selection and bootstrapping
+    - ExpEnv: randomised chain, Maze, [Montezuma’s Revenge](https://github.com/openai/gym)
+
 - [RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments](https://openreview.net/pdf?id=rkg-TJBFPB) *ICLR 2020*
     - Roberta Raileanu, Tim Rocktäschel
     - Key: lead to significant changes in its learned state representation
     - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid)
 
-- [Never give up: Learning directed exploration strategies](https://arxiv.org/abs/2002.06038)  *ICLR 2020*
+- [Never give up: Learning directed exploration strategies](https://arxiv.org/abs/2002.06038) *ICLR 2020*
   - Adrià Puigdomènech Badia, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, Bilal Piot, Steven Kapturowski, Olivier Tieleman, Martín Arjovsky, Alexander Pritzel, Andew Bolt, Charles Blundell
   - Key:  ICM+RND, different degrees of exploration/exploitation
   - ExpEnv: [Atari](https://github.com/openai/gym)
@@ -174,7 +232,7 @@ format:
 - [Rank the Episodes: A Simple Approach for Exploration in Procedurally-Generated Environments](https://arxiv.org/abs/2101.08152) *ICLR 2021*
   - Daochen Zha, Wenye Ma, Lei Yuan, Xia Hu, Ji Liu
   - Key: procedurally-generated environments, episodic exploration score from both per-episode and long-term views
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), MiniWorld, MuJoCo
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), MiniWorld, [MuJoCo](https://github.com/openai/mujoco-py)
 
 - [First return then explore](https://www.nature.com/articles/s41586-020-03157-9) *Nature 2021*
   - Adrien Ecoffet, Joost Huizinga, Joel Lehman, Kenneth O. Stanley, Jeff Clune
@@ -217,7 +275,7 @@ format:
 
 ### ICLR 2022
 
-- [The Information Geometry of Unsupervised Reinforcement Learning](https://openreview.net/pdf?id=3wU2UX0voE) (Oral: 8, 8,8)
+- [The Information Geometry of Unsupervised Reinforcement Learning](https://openreview.net/pdf?id=3wU2UX0voE) (Oral: 8, 8, 8)
    - Benjamin Eysenbach, Ruslan Salakhutdinov, Sergey Levine
    - Key: unsupervised skill discovery, mutual information objective, adversarially-chosen reward functions
    - ExpEnv: None
@@ -272,7 +330,7 @@ format:
   - Key: multi-stage approach, policy decomposition
   - ExpEnv: [Jericho](https://github.com/microsoft/jericho)
 
-- [On the Convergence of the Monte Carlo Exploring Starts Algorithm for Reinforcement Learning](https://openreview.net/forum?id=JzNB0eA2-M4)  (Poster: 8, 8, 5, 5)
+- [On the Convergence of the Monte Carlo Exploring Starts Algorithm for Reinforcement Learning](https://openreview.net/forum?id=JzNB0eA2-M4) (Poster: 8, 8, 5, 5)
   - Che Wang, Shuhan Yuan, Kai Shao, Keith Ross
   - Key: Monte Carlo exploring starts, optimal policy feed-forward MDPs
   - ExpEnv: [blackjack](https://github.com/topics/blackjack-game), cliff Walking
@@ -310,7 +368,7 @@ format:
   - Key: the Wasserstein-1 distance, goal-conditioned, quasimetric, adversarial intrinsic motivation
   - ExpEnv: Grid World, Fetch Robot (based on [MuJoCo](https://github.com/openai/mujoco-py))
 
-- [Information Directed Reward Learning for Reinforcement Learning](https://arxiv.org/pdf/2102.12466.pdf) (Poster: 9, 8 7, 6) 
+- [Information Directed Reward Learning for Reinforcement Learning](https://arxiv.org/pdf/2102.12466.pdf) (Poster: 9, 8, 7, 6) 
   - David Lindner, Matteo Turchetta, Sebastian Tschiatschek, Kamil Ciosek, Andreas Krause
   - Key: expert queries, Bayesian model of the reward, maximize the information gain
   - ExpEnv: [MuJoCo](https://github.com/openai/mujoco-py)
@@ -325,7 +383,7 @@ format:
   - Key: hierarchical skill learning, balance between generality and specificity, skills of varying complexity
   - ExpEnv: Hurdles, Limbo, Stairs, GoalWall PoleBalance (based on [MuJoCo](https://github.com/openai/mujoco-py))
 
-- [Exploration-Exploitation in Multi-Agent Competition: Convergence with Bounded Rationality](https://openreview.net/pdf?id=OSLVL-tIBei) (spotlight: 8,6,6)
+- [Exploration-Exploitation in Multi-Agent Competition: Convergence with Bounded Rationality](https://openreview.net/pdf?id=OSLVL-tIBei) (spotlight: 8, 6, 6)
   - Stefanos Leonardos, Georgios Piliouras, Kelly Spendlove
   - Key: competitive multi-agent, balance between game rewards and exploration costs, unique quantal-response equilibrium
   - ExpEnv: Two-Agent Weighted Zero-Sum Games
@@ -340,6 +398,10 @@ format:
   - Key: episodic Multi-agent, curiosity-driven exploration, prediction errors, episodic memory
   - ExpEnv: [Predator-Prey](https://github.com/Farama-Foundation/PettingZoo), [StarCraft II](https://github.com/oxwhirl/smac)
 
+- [CIC: Contrastive Intrinsic Control for Unsupervised Skill Discovery](https://openreview.net/pdf/f6d399de0d94e1c67c8b556e4ab6c0ee5b77a10f.pdf) (not accepted now: 8, 8, 6, 3)
+    - Michael Laskin, Hao Liu, Xue Bin Peng, Denis Yarats, Aravind Rajeswaran, Pieter Abbeel
+    - Key: decomposition of the mutual information, particle estimator, contrastive learning
+    - ExpEnv: [URLB](https://openreview.net/pdf?id=lwrPkQP_is)
 
 ## Contributing
 Our purpose is to provide a starting paper guide to who are interested in exploration methods in RL.
