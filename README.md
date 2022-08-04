@@ -13,9 +13,7 @@ In order to give readers an intuitive feeling for exploration, we provide a typi
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./assets/minigrid_hard_exploration.png" width=100% height=100%>
     <br>
-    <center>
-    A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.
-    </center>
+    <figcaption align = "center"><b>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</b></figcaption>
 </center>
 
 ## Table of Contents
@@ -44,17 +42,17 @@ Demo Data`.
 > Note that there may be overlap between these categories, and an algorithm may belong to several of them.
 
 <center>
+<figure>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./assets/erl_taxonomy.png" width=100% height=100%>
     <br>
-    <center>
-    A non-exhaustive, but useful taxonomy of methods in Exploration RL.
-    We provide some example methods for each of the different categories, shown in blue above.
-    </center>
+    <figcaption align = "center"><b>A non-exhaustive, but useful taxonomy of methods in Exploration RL.
+    We provide some example methods for each of the different categories, shown in blue area above.</b></figcaption>
+</figure>
 </center>
 
-Here are links to papers on methods that appear in taxonomy:
+Here are the links to the papers that appeared in the taxonomy:
 >[1] [Go-Explore](https://www.nature.com/articles/s41586-020-03157-9): Adrien Ecoffet et al, 2021  
 [2] [NoisyNet](https://openreview.net/pdf?id=rywHCPkAW), Meire Fortunato et al, 2018  
 [3] [DQN-PixelCNN](https://arxiv.org/abs/1606.01868): Marc G. Bellemare et al, 2016  
