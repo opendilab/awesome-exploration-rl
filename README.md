@@ -13,7 +13,7 @@ in order to learn the skills required to achieve the goal.
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/minigrid_hard_exploration.png" width=100% height=100%>
+    src="./assets/minigrid_hard_exploration.png" width=40% height=40%>
     <br>
     <figcaption align = "center"><b>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</b></figcaption>
 </center>
