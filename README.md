@@ -52,7 +52,9 @@ According to the phase the exploration component is explicitly applied, we simpl
   - `Goal Based`
   - `(Expert) Demo Data`
 
-> Note that there may be overlap between these categories, and an algorithm may belong to several of them.
+> Note that there may be overlap between these categories, and an algorithm may belong to several of them. 
+> For other detailed survey on exploration methods in RL, you can refer to [Tianpei Yang et al](https://arxiv.org/abs/2109.06668) and [Susan Amin et al](https://arxiv.org/abs/2109.00157).
+
 
 <center>
 <figure>
@@ -61,7 +63,7 @@ According to the phase the exploration component is explicitly applied, we simpl
     src="./assets/erl_taxonomy.png" width=100% height=100%>
     <br>
     <figcaption align = "center"><b>A non-exhaustive, but useful taxonomy of methods in Exploration RL.
-    We provide some example methods for each of the different categories, shown in blue area above.</b></figcaption>
+    We provide some example methods for each of the different categories, shown in blue area above. </b></figcaption>
 </figure>
 </center>
 
