@@ -411,6 +411,11 @@ format:
   - Key: episodic Multi-agent, curiosity-driven exploration, prediction errors, episodic memory
   - ExpEnv: [Predator-Prey](https://github.com/Farama-Foundation/PettingZoo), [StarCraft II](https://github.com/oxwhirl/smac)
 
+- [Learning Diverse Policies in MOBA Games via Macro-Goals](https://proceedings.neurips.cc/paper/2021/file/86dba86754c0ad93997a11fa947d97b2-Paper.pdf) (Poster: 7, 6, 5, 5)
+  - Yiming Gao, Bei Shi, Xueying Du, Liang Wang, Guangwei Chen, Zhenjie Lian, Fuhao Qiu, Guonan Han, Weixuan Wang, Deheng Ye, Qiang Fu, Wei Yang, Lanxiao Huang
+  - Key: MOBA-game, policy diversity, Macro-Goals Guided framework, Meta-Controller, human demonstrations
+  - ExpEnv: [honor of kings](https://www.honorofkings.com/)
+
 - [CIC: Contrastive Intrinsic Control for Unsupervised Skill Discovery](https://openreview.net/pdf/f6d399de0d94e1c67c8b556e4ab6c0ee5b77a10f.pdf) (not accepted now: 8, 8, 6, 3)
     - Michael Laskin, Hao Liu, Xue Bin Peng, Denis Yarats, Aravind Rajeswaran, Pieter Abbeel
     - Key: decomposition of the mutual information, particle estimator, contrastive learning
