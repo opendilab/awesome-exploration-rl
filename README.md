@@ -38,10 +38,10 @@ In the *train* phase, the agent uses the collected experience to update the curr
 According to the phase the exploration component is explicitly applied, we simply divide the methods in `Exploration RL` into two main categories: `Augmented Collecting Strategy`, `Augmented Training Strategy`:
 
 - `Augmented Collecting Strategy` represents a variety of different exploration strategies commonly used in the *collect* phase, which we further divide into *four* categories:
-  - `Action Selection Permutation`
+  - `Action Selection Perturbation`
   - `Action Selection Guidance`
   - `State Selection Guidance`
-  - `Parameter Space Permutation`
+  - `Parameter Space Perturbation`
 
 - `Augmented Training Strategy` represents a variety of different exploration strategies commonly used in the *train* phase, which we further divide into *seven* categories:
   - `Count Based`
