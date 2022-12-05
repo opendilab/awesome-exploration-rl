@@ -24,6 +24,7 @@ in order to learn the skills required to achieve the goal.
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
   <!-- - [NeurIPS 2022](#nips-2022) (**<font color="red">New!!!</font>**)  -->
+  - [NeurIPS 2022](#neurips-2022)
   - [ICML 2022](#icml-2022)
   - [ICLR 2022](#iclr-2022)
   - [NeurIPS 2021](#neurips-2021)
@@ -252,7 +253,58 @@ format:
   - Key:  detachment and derailment, remembering states, returning to them, and exploring from them
   - ExpEnv: [Atari](https://github.com/openai/gym), pick-and-place robotics task
   
+### NeurIPS 2022
 
+- [You Only Live Once: Single-Life Reinforcement Learning via Learned Reward Shaping](https://openreview.net/pdf?id=303XqIQ5c_d)  (Poster: 6, 6, 5, 5)
+  - Annie S. Chen, Archit Sharma, Sergey Levine, Chelsea Finn
+  - Key: single-life reinforcement learning, Q-weighted adversarial learning (QWALE), distribution matching strategy
+  - ExpEnv: Tabletop-Organization, Pointmass, modified HalfCheetah, modified Franka-Kitchen
+
+- [Curious Exploration via Structured World Models Yields Zero-Shot Object Manipulation](https://openreview.net/pdf?id=NnuYZ1el24C) (Poster: 8, 7, 6)
+  - Cansu Sancaktar, Sebastian Blaes, Georg Martius
+  - Key: self-reinforcing cycle between good models and good exploration, zero-shot generalization to downstream tasks via model-based planning
+  - ExpEnv: Playground, Fetch Pick & Place Construction
+
+- [Model-based Lifelong Reinforcement Learning with Bayesian Exploration](https://openreview.net/pdf?id=6I3zJn9Slsb) (Poster: 7, 6, 6)
+  - Haotian Fu, Shangqun Yu, Michael Littman, George Konidaris
+  - Key: hierarchical Bayesian posterior
+  - ExpEnv:  HiP-MDP versions of Mujoco, Meta-world
+  
+- [On the Statistical Efficiency of Reward-Free Exploration in Non-Linear RL](https://openreview.net/pdf?id=65eqtvEShR8) (Poster: 7, 6, 5, 5)
+  - Jinglin Chen, Aditya Modi, Akshay Krishnamurthy, Nan Jiang, Alekh Agarwal
+  - Key: sample-efficient reward-free exploration, explorability or reachability assumptions
+  - ExpEnv: None
+
+- [DOPE: Doubly Optimistic and Pessimistic Exploration for Safe Reinforcement Learning](https://openreview.net/forum?id=U4BUMoVTrB2) (Poster: 8, 7, 4)
+  - Archana Bura, Aria Hasanzadezonuzy, Dileep Kalathil, Srinivas Shakkottai, Jean-Francois Chamberland
+  - Key: model-based safe RL, finite-horizon Constrained Markov Decision Process, reward bonus for exploration (optimism) with a conservative constraint (pessimism)
+  - ExpEnv: Factored CMDP environment
+
+- [Bayesian Optimistic Optimization: Optimistic Exploration for Model-based Reinforcement Learning](https://openreview.net/pdf?id=GdHVClGh9N)
+  - Chenyang Wu, Tianci Li, Zongzhang Zhang, Yang Yu
+  - Key: Optimism in the face of uncertainty (OFU), Bayesian optimistic optimization
+  - ExpEnv:  RiverSwim, Chain, Random MDPs.
+
+- [Active Exploration for Inverse Reinforcement Learning](https://openreview.net/forum?id=TPOJzwv2pc) (Poster: 7, 7, 7, 7)
+  - David Lindner, Andreas Krause, Giorgia Ramponi 
+  - Key: actively explores an unknown environment and expert policy,  does not require a generative model of the environment
+  - ExpEnv: Four Paths, Random MDPs, Double Chain, Chain, Gridworld
+
+- [Exploration-Guided Reward Shaping for Reinforcement Learning under Sparse Rewards](https://openreview.net/pdf?id=W7HvKO1erY) (Poster: 6, 6, 4)
+  - Rati Devidze, Parameswaran Kamalaruban, Adish Singla
+  - Key: reward shaping, intrinsic reward function, exploration-based bonuses.
+  - ExpEnv: Chain, Room, Linek
+
+- [Monte Carlo Augmented Actor-Critic for Sparse Reward Deep Reinforcement Learning from Suboptimal Demonstrations](https://openreview.net/pdf?id=FLzTj4ia8BN) (Poster: 6, 6, 5, 5)
+  - Albert Wilcox, Ashwin Balakrishna, Jules Dedieu, Wyame Benslimane, Daniel S. Brown, Ken Goldberg
+  - Key: parameter free, the maximum of the standard TD target and a Monte Carlo estimate of the reward-to-go.
+  - ExpEnv: Pointmass Navigation, Block Extraction, Sequential Pushing, Door Opening, Block Lifting
+  
+- [Incentivizing Combinatorial Bandit Exploration](https://openreview.net/pdf?id=ITXgYOFi8b) (Poster: 7, 6, 5, 3)
+  - Xinyan Hu, Dung Daniel Ngo, Aleksandrs Slivkins, and Zhiwei Steven Wu
+  - Key: incentivized exploration, large,structured action sets and highly correlated beliefs, combinatorial semi-bandits.
+  - ExpEnv: None
+  
 ### ICML 2022
 
 - [From Dirichlet to Rubin: Optimistic Exploration in RL without Bonuses](https://arxiv.org/pdf/2205.07704) (Oral)
@@ -420,7 +472,7 @@ format:
     - Michael Laskin, Hao Liu, Xue Bin Peng, Denis Yarats, Aravind Rajeswaran, Pieter Abbeel
     - Key: decomposition of the mutual information, particle estimator, contrastive learning
     - ExpEnv: [URLB](https://openreview.net/pdf?id=lwrPkQP_is)
-
+    
 ## Contributing
 Our purpose is to provide a starting paper guide to who are interested in exploration methods in RL.
 If you are interested in contributing, please refer to [HERE](CONTRIBUTING.md) for instructions in contribution.
