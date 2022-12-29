@@ -255,7 +255,12 @@ format:
   
 ### NeurIPS 2022
 
-- [You Only Live Once: Single-Life Reinforcement Learning via Learned Reward Shaping](https://openreview.net/pdf?id=303XqIQ5c_d)  (Poster: 6, 6, 5, 5)
+- [Redeeming Intrinsic Rewards via Constrained Optimization](https://williamd4112.github.io/pubs/neurips22_eipo.pdf) (Poster: 8, 7, 7)
+  - Eric Chen, Zhang-Wei Hong, Joni Pajarinen, Pulkit Agrawal
+  - Key:  automatically tunes the importance of the intrinsic reward, principled constrained policy optimization procedure
+  - ExpEnv: Atari
+
+- [You Only Live Once: Single-Life Reinforcement Learning via Learned Reward Shaping](https://openreview.net/pdf?id=303XqIQ5c_d) (Poster: 6, 6, 5, 5)
   - Annie S. Chen, Archit Sharma, Sergey Levine, Chelsea Finn
   - Key: single-life reinforcement learning, Q-weighted adversarial learning (QWALE), distribution matching strategy
   - ExpEnv: Tabletop-Organization, Pointmass, modified HalfCheetah, modified Franka-Kitchen
