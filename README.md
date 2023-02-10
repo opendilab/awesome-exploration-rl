@@ -252,7 +252,55 @@ format:
   - Adrien Ecoffet, Joost Huizinga, Joel Lehman, Kenneth O. Stanley, Jeff Clune
   - Key:  detachment and derailment, remembering states, returning to them, and exploring from them
   - ExpEnv: [Atari](https://github.com/openai/gym), pick-and-place robotics task
-  
+
+### ICLR 2023
+
+- [Learnable Behavior Control: Breaking Atari Human World Records via Sample-Efficient Behavior Selection](https://openreview.net/pdf?id=FeWvD0L_a4) (10,8,8)
+  - Jiajun Fan, Yuzheng Zhuang, Yuecheng Liu, Jianye HAO, Bin Wang, Jiangcheng Zhu, Hao Wang, Shu-Tao Xia
+  - Key: Learnable Behavioral Control, hybrid behavior mapping, a unified learnable process for behavior selection, bandit-based metacontrollers.
+  - ExpEnv: Atari
+
+- [Planning Goals for Exploration](https://openreview.net/pdf?id=6qeBuZSo7Pr) (Spotlight: 8, 8, 8, 8, 6)
+  - Edward S. Hu, Richard Chang, Oleh Rybkin, Dinesh Jayaraman
+  - Key: goal-conditioned, planning exploratory goals, world models, sampling-based planning algorithms.
+  - ExpEnv: Point Maze, Walker, Ant Maze, 3-Block Stacking
+
+- [Pink Noise Is All You Need: Colored Noise Exploration in Deep Reinforcement Learning](https://openreview.net/pdf?id=hQ9V5QN27eS) (Spotlight: 8, 8, 8)
+  - Onno Eberhard, Jakob Hollenstein, Cristina Pinneri, Georg Martius
+  - Key: continuous action spaces, temporally correlated noise, colored noise
+  - ExpEnv: DeepMind Control Suite, Gym, Adroit hand suite
+
+- [Learning About Progress From Experts](https://openreview.net/pdf?id=sKc6fgce1zs) (Spotlight: 8, 8, 6)
+  - Jake Bruce, Ankit Anand, Bogdan Mazoure, Rob Fergus
+  - Key: the use of expert demonstrations, long-horizon tasks, learn a monotonically increasing function that summarizes progress. 
+  - ExpEnv: NetHack
+
+- [DEP-RL: Embodied Exploration for Reinforcement Learning in Overactuated and Musculoskeletal Systems](https://openreview.net/pdf?id=C-xa_D3oTj6) (Spotlight: 10, 8, 8, 8)
+  - Pierre Schumacher, Daniel Haeufle, Dieter Büchler, Syn Schmitt, Georg Martius
+  - Key:  large overactuated action spaces, differential extrinsic plasticity, state-space covering exploration
+  - ExpEnv: musculoskeletal systems: torquearm, arm26, humanreacher, ostrich-foraging, ostrich-run, human-run, human-hop
+
+- [Does Zero-Shot Reinforcement Learning Exist?](https://openreview.net/pdf?id=MYEap_OcQI) (Spotlight: 10, 8, 8,3)
+  - Ahmed Touati, Jérémy Rapin, Yann Ollivier
+  - Key: zero-shot RL agent, disentangle universal representation learning from exploration, SFs with Laplacian eigenfunctions
+  - ExpEnv: Unsupervised RL and ExORL benchmarks
+
+- [Latent State Marginalization as a Low-cost Approach to Improving Exploration](https://openreview.net/pdf?id=b0UksKFcTOL) (Poster:  6, 6, 6)
+  - Dinghuai Zhang, Aaron Courville, Yoshua Bengio, Qinqing Zheng, Amy Zhang, Ricky T. Q. Chen
+  - Key: adoption of latent variable policies within the MaxEnt framework, low-cost marginalization of the latent state,
+  - ExpEnv: DeepMind Control Suite
+
+- [Revisiting Curiosity for Exploration in Procedurally Generated Environments](https://openreview.net/pdf?id=j3GK3_xZydY) (Poster:  8, 8, 5, 3, 3)
+  - Kaixin Wang, Kuangqi Zhou, Bingyi Kang, Jiashi Feng, Shuicheng YAN
+  - Key: lifelong intrinsic rewards and episodic intrinsic rewards，the performance of all lifelong-episodic combinations.
+  - ExpEnv: MiniGrid
+
+- [MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations](https://openreview.net/pdf?id=JdTnc9gjVfJ)  (Poster: 8, 6, 6, 6)
+  - Nicklas Hansen, Yixin Lin, Hao Su, Xiaolong Wang, Vikash Kumar, Aravind Rajeswaran
+  - Key:  Key ingredients for leveraging demonstrations in model learning
+  - ExpEnv: Adroit， Meta-World， DMControl
+
+
 ### NeurIPS 2022
 
 - [Redeeming Intrinsic Rewards via Constrained Optimization](https://williamd4112.github.io/pubs/neurips22_eipo.pdf) (Poster: 8, 7, 7)
