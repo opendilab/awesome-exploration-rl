@@ -6,7 +6,7 @@ The repository will be continuously updated to track the frontier of ERL.
 Welcome to follow and star!
 
 The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
-In order to give readers an intuitive feeling for exploration, we provide a visualization of a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid) below.
+In order to give readers an intuitive feeling for exploration, we provide a visualization of a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/Minigrid) below.
 In this task, a series of actions to achieve the goal often require dozens or even hundreds of steps, in which the agent needs to fully explore different state-action spaces 
 in order to learn the skills required to achieve the goal.
 
@@ -23,7 +23,7 @@ in order to learn the skills required to achieve the goal.
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
-  <!-- - [NeurIPS 2022](#nips-2022) (**<font color="red">New!!!</font>**)  -->
+  - [ICLR 2023](#iclr-2023)
   - [NeurIPS 2022](#neurips-2022)
   - [ICML 2022](#icml-2022)
   - [ICLR 2022](#iclr-2022)
@@ -226,7 +226,7 @@ format:
 - [RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments](https://openreview.net/pdf?id=rkg-TJBFPB) *ICLR 2020*
     - Roberta Raileanu, Tim Rocktäschel
     - Key: lead to significant changes in its learned state representation
-    - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid)
+    - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid)
 
 - [Never give up: Learning directed exploration strategies](https://arxiv.org/abs/2002.06038) *ICLR 2020*
   - Adrià Puigdomènech Badia, Pablo Sprechmann, Alex Vitvitskyi, Daniel Guo, Bilal Piot, Steven Kapturowski, Olivier Tieleman, Martín Arjovsky, Alexander Pritzel, Andew Bolt, Charles Blundell
@@ -246,7 +246,7 @@ format:
 - [Rank the Episodes: A Simple Approach for Exploration in Procedurally-Generated Environments](https://arxiv.org/abs/2101.08152) *ICLR 2021*
   - Daochen Zha, Wenye Ma, Lei Yuan, Xia Hu, Ji Liu
   - Key: procedurally-generated environments, episodic exploration score from both per-episode and long-term views
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), MiniWorld, [MuJoCo](https://github.com/openai/mujoco-py)
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid), MiniWorld, [MuJoCo](https://github.com/openai/mujoco-py)
 
 - [First return then explore](https://www.nature.com/articles/s41586-020-03157-9) *Nature 2021*
   - Adrien Ecoffet, Joost Huizinga, Joel Lehman, Kenneth O. Stanley, Jeff Clune
@@ -255,29 +255,29 @@ format:
 
 ### ICLR 2023
 
-- [Learnable Behavior Control: Breaking Atari Human World Records via Sample-Efficient Behavior Selection](https://openreview.net/pdf?id=FeWvD0L_a4) (10,8,8)
+- [Learnable Behavior Control: Breaking Atari Human World Records via Sample-Efficient Behavior Selection](https://openreview.net/pdf?id=FeWvD0L_a4) (Oral: 10, 8, 8)
   - Jiajun Fan, Yuzheng Zhuang, Yuecheng Liu, Jianye HAO, Bin Wang, Jiangcheng Zhu, Hao Wang, Shu-Tao Xia
-  - Key: Learnable Behavioral Control, hybrid behavior mapping, a unified learnable process for behavior selection, bandit-based metacontrollers.
-  - ExpEnv: Atari
+  - Key: Learnable Behavioral Control, hybrid behavior mapping, a unified learnable process for behavior selection, bandit-based metacontrollers
+  - ExpEnv: [Atari](https://github.com/openai/gym)
 
 - [Planning Goals for Exploration](https://openreview.net/pdf?id=6qeBuZSo7Pr) (Spotlight: 8, 8, 8, 8, 6)
   - Edward S. Hu, Richard Chang, Oleh Rybkin, Dinesh Jayaraman
-  - Key: goal-conditioned, planning exploratory goals, world models, sampling-based planning algorithms.
+  - Key: goal-conditioned, planning exploratory goals, world models, sampling-based planning algorithms
   - ExpEnv: Point Maze, Walker, Ant Maze, 3-Block Stacking
 
 - [Pink Noise Is All You Need: Colored Noise Exploration in Deep Reinforcement Learning](https://openreview.net/pdf?id=hQ9V5QN27eS) (Spotlight: 8, 8, 8)
   - Onno Eberhard, Jakob Hollenstein, Cristina Pinneri, Georg Martius
   - Key: continuous action spaces, temporally correlated noise, colored noise
-  - ExpEnv: DeepMind Control Suite, Gym, Adroit hand suite
+  - ExpEnv: [DeepMind Control Suite](https://github.com/deepmind/dm_control), [Atari](https://github.com/openai/gym), Adroit hand suite
 
 - [Learning About Progress From Experts](https://openreview.net/pdf?id=sKc6fgce1zs) (Spotlight: 8, 8, 6)
   - Jake Bruce, Ankit Anand, Bogdan Mazoure, Rob Fergus
-  - Key: the use of expert demonstrations, long-horizon tasks, learn a monotonically increasing function that summarizes progress. 
-  - ExpEnv: NetHack
+  - Key: the use of expert demonstrations, long-horizon tasks, learn a monotonically increasing function that summarizes progress
+  - ExpEnv: [NetHack](https://github.com/NetHack/NetHack)
 
 - [DEP-RL: Embodied Exploration for Reinforcement Learning in Overactuated and Musculoskeletal Systems](https://openreview.net/pdf?id=C-xa_D3oTj6) (Spotlight: 10, 8, 8, 8)
   - Pierre Schumacher, Daniel Haeufle, Dieter Büchler, Syn Schmitt, Georg Martius
-  - Key:  large overactuated action spaces, differential extrinsic plasticity, state-space covering exploration
+  - Key: large overactuated action spaces, differential extrinsic plasticity, state-space covering exploration
   - ExpEnv: musculoskeletal systems: torquearm, arm26, humanreacher, ostrich-foraging, ostrich-run, human-run, human-hop
 
 - [Does Zero-Shot Reinforcement Learning Exist?](https://openreview.net/pdf?id=MYEap_OcQI) (Spotlight: 10, 8, 8,3)
@@ -285,21 +285,30 @@ format:
   - Key: zero-shot RL agent, disentangle universal representation learning from exploration, SFs with Laplacian eigenfunctions
   - ExpEnv: Unsupervised RL and ExORL benchmarks
 
-- [Latent State Marginalization as a Low-cost Approach to Improving Exploration](https://openreview.net/pdf?id=b0UksKFcTOL) (Poster:  6, 6, 6)
+- [Latent State Marginalization as a Low-cost Approach to Improving Exploration](https://openreview.net/pdf?id=b0UksKFcTOL) (Poster: 6, 6, 6)
   - Dinghuai Zhang, Aaron Courville, Yoshua Bengio, Qinqing Zheng, Amy Zhang, Ricky T. Q. Chen
-  - Key: adoption of latent variable policies within the MaxEnt framework, low-cost marginalization of the latent state,
-  - ExpEnv: DeepMind Control Suite
+  - Key: adoption of latent variable policies within the MaxEnt framework, low-cost marginalization of the latent state
+  - ExpEnv: [DeepMind Control Suite](https://github.com/deepmind/dm_control)
 
-- [Revisiting Curiosity for Exploration in Procedurally Generated Environments](https://openreview.net/pdf?id=j3GK3_xZydY) (Poster:  8, 8, 5, 3, 3)
+- [Revisiting Curiosity for Exploration in Procedurally Generated Environments](https://openreview.net/pdf?id=j3GK3_xZydY) (Poster: 8, 8, 5, 3, 3)
   - Kaixin Wang, Kuangqi Zhou, Bingyi Kang, Jiashi Feng, Shuicheng YAN
   - Key: lifelong intrinsic rewards and episodic intrinsic rewards，the performance of all lifelong-episodic combinations.
-  - ExpEnv: MiniGrid
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid)
 
-- [MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations](https://openreview.net/pdf?id=JdTnc9gjVfJ)  (Poster: 8, 6, 6, 6)
+- [MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations](https://openreview.net/pdf?id=JdTnc9gjVfJ) (Poster: 8, 6, 6, 6)
   - Nicklas Hansen, Yixin Lin, Hao Su, Xiaolong Wang, Vikash Kumar, Aravind Rajeswaran
-  - Key:  Key ingredients for leveraging demonstrations in model learning
-  - ExpEnv: Adroit， Meta-World， DMControl
+  - Key: Key ingredients for leveraging demonstrations in model learning
+  - ExpEnv: Adroit, Meta-World, [DeepMind Control Suite](https://github.com/deepmind/dm_control)
 
+- [Simplifying Model-based RL: Learning Representations, Latent-space Models, and Policies with One Objective](https://openreview.net/pdf?id=MQcmfgRxf7a) (Poster: 8, 6, 6, 6, 6)
+  - Raj Ghugare, Homanga Bharadhwaj, Benjamin Eysenbach, Sergey Levine, Russ Salakhutdinov
+  - Key: alignment between these auxiliary objectives and the RL objective,  a lower bound on expected returns
+  - ExpEnv: model-based benchmark
+
+- [EUCLID: Towards Efficient Unsupervised Reinforcement Learning with Multi-choice Dynamics Model](https://openreview.net/pdf?id=9-tjK93-rP) (Poster:  6, 6, 6, 6)
+  - Yifu Yuan, Jianye HAO, Fei Ni, Yao Mu, YAN ZHENG, Yujing Hu, Jinyi Liu, Yingfeng Chen, Changjie Fan
+  - Key: transition dynamics modeling, multi-choice dynamics model, sampling efficiency
+  - ExpEnv: URLB
 
 ### NeurIPS 2022
 
@@ -459,7 +468,7 @@ format:
 - [Interesting Object, Curious Agent: Learning Task-Agnostic Exploration](https://arxiv.org/abs/2111.13119) (Oral: 9, 8, 8, 8)
   - Simone Parisi, Victoria Dean,Deepak Pathak, Abhinav Gupta
   - Key: task-agnostic exploration, agent-centric component, environment-centric component
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), [Habitat](https://github.com/facebookresearch/habitat-sim)
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid), [Habitat](https://github.com/facebookresearch/habitat-sim)
 
 - [Tactical Optimism and Pessimism for Deep Reinforcement Learning](https://arxiv.org/pdf/2102.03765.pdf) (Poster: 9, 7, 6, 6) 
   - Ted Moskovitz, Jack Parker-Holder, Aldo Pacchiano, Michael Arbel, Michael Jordan
@@ -479,7 +488,7 @@ format:
 - [MADE: Exploration via Maximizing Deviation from Explored Regions](https://openreview.net/pdf?id=DTVfEJIL3DB) (Poster: 7, 7, 6, 5)
   - Tianjun Zhang, Paria Rashidinejad, Jiantao Jiao, Yuandong Tian, Joseph Gonzalez, Stuart Russell
   - Key: maximizing deviation from the explored regions, intrinsic reward
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), [DeepMind Control Suite](https://github.com/deepmind/dm_control)
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid), [DeepMind Control Suite](https://github.com/deepmind/dm_control)
 
 - [Adversarial Intrinsic Motivation for Reinforcement Learning](https://arxiv.org/pdf/2105.13345.pdf) (Poster: 7, 7, 6) 
   - Ishan Durugkar, Mauricio Tec, Scott Niekum, Peter Stone
@@ -509,7 +518,7 @@ format:
 - [NovelD: A Simple yet Effective Exploration Criterion](https://proceedings.neurips.cc/paper/2021/file/d428d070622e0f4363fceae11f4a3576-Paper.pdf) (Poster: 7, 6, 6, 6)
   - Tianjun Zhang, Huazhe Xu, Xiaolong Wang, Yi Wu, Kurt Keutzer, Joseph E. Gonzalez, Yuandong Tian
   - Key: weighting every novel area approximately equally
-  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/gym-minigrid), [NetHack](https://github.com/NetHack/NetHack), [Atari](https://github.com/openai/gym)
+  - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid), [NetHack](https://github.com/NetHack/NetHack), [Atari](https://github.com/openai/gym)
 
 - [Episodic Multi-agent Reinforcement Learning with Curiosity-driven Exploration](https://arxiv.org/pdf/2111.11032.pdf) (Poster: 7, 6, 6, 5)
   - Lulu Zheng, Jiarui Chen, Jianhao Wang, Jiamin He, Yujing Hu, Yingfeng Chen, Changjie Fan, Yang Gao, Chongjie Zhang
