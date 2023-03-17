@@ -10,13 +10,23 @@ In order to give readers an intuitive feeling for exploration, we provide a visu
 In this task, a series of actions to achieve the goal often require dozens or even hundreds of steps, in which the agent needs to fully explore different state-action spaces 
 in order to learn the skills required to achieve the goal.
 
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./assets/minigrid_hard_exploration.png" width=40% height=40%>
-    <br>
-    <figcaption align = "center"><b>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</b></figcaption>
-</center>
+[comment]: <> (<center>)
+
+[comment]: <> (    <img style="border-radius: 0.3125em;)
+
+[comment]: <> (    box-shadow: 0 2px 4px 0 rgba&#40;34,36,38,.12&#41;,0 2px 10px 0 rgba&#40;34,36,38,.08&#41;;" )
+
+[comment]: <> (    src="./assets/minigrid_hard_exploration.png" width=40% height=40%>)
+
+[comment]: <> (    <br>)
+
+[comment]: <> (    <figcaption align = "center"><b>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</b></figcaption>)
+
+[comment]: <> (</center>)
+
+<p align="center">
+  <img src="./assets/minigrid_hard_exploration.png" alt="A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0" />
+</p>
 
 ## Table of Contents
 
@@ -32,6 +42,10 @@ in order to learn the skills required to achieve the goal.
 
 
 ## A Taxonomy of Exploration RL Methods
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
 In general, we can divide reinforcement learning process into two phases: *collect* phase and *train* phase.
 In the *collect* phase, the agent chooses actions based on the current policy and then interacts with the environment to collect useful experience.
 In the *train* phase, the agent uses the collected experience to update the current policy to obtain a better performing policy.
@@ -88,6 +102,8 @@ Here are the links to the papers that appeared in the taxonomy:
 [17] [DQfD](https://arxiv.org/abs/1704.03732): Todd Hester et al, 2018  
 [18] [R2D3](https://arxiv.org/abs/1909.01387): Caglar Gulcehre et al, 2019  
 
+</details>
+
 
 ## Papers
 
@@ -100,6 +116,9 @@ format:
 ```
 
 ### Classic Exploration RL Papers
+
+<details open>
+<summary>(Click to Collapse)</summary>
 
 - [Using Confidence Bounds for Exploitation-Exploration Trade-offs](https://www.jmlr.org/papers/volume3/auer02a/auer02a.pdf) *Journal of Machine Learning Research, 2002*
   - Peter Auer
@@ -253,7 +272,12 @@ format:
   - Key:  detachment and derailment, remembering states, returning to them, and exploring from them
   - ExpEnv: [Atari](https://github.com/openai/gym), pick-and-place robotics task
 
+</details>
+
 ### ICLR 2023
+
+<details open>
+<summary>(Click to Collapse)</summary>
 
 - [Learnable Behavior Control: Breaking Atari Human World Records via Sample-Efficient Behavior Selection](https://openreview.net/pdf?id=FeWvD0L_a4) (Oral: 10, 8, 8)
   - Jiajun Fan, Yuzheng Zhuang, Yuecheng Liu, Jianye HAO, Bin Wang, Jiangcheng Zhu, Hao Wang, Shu-Tao Xia
@@ -325,8 +349,13 @@ format:
   - Yifu Yuan, Jianye HAO, Fei Ni, Yao Mu, YAN ZHENG, Yujing Hu, Jinyi Liu, Yingfeng Chen, Changjie Fan
   - Key: transition dynamics modeling, multi-choice dynamics model, sampling efficiency
   - ExpEnv: URLB
+  
+</details>
 
 ### NeurIPS 2022
+
+<details open>
+<summary>(Click to Collapse)</summary>
 
 - [Redeeming Intrinsic Rewards via Constrained Optimization](https://williamd4112.github.io/pubs/neurips22_eipo.pdf) (Poster: 8, 7, 7)
   - Eric Chen, Zhang-Wei Hong, Joni Pajarinen, Pulkit Agrawal
@@ -383,7 +412,13 @@ format:
   - Key: incentivized exploration, large,structured action sets and highly correlated beliefs, combinatorial semi-bandits.
   - ExpEnv: None
   
+</details>
+
 ### ICML 2022
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
 
 - [From Dirichlet to Rubin: Optimistic Exploration in RL without Bonuses](https://arxiv.org/pdf/2205.07704) (Oral)
   - Daniil Tiapkin, Denis Belomestny, Eric Moulines, Alexey Naumov, Sergey Samsonov, Yunhao Tang, Michal Valko, Pierre Menard
@@ -414,9 +449,13 @@ format:
   - Runzhe Wan, Branislav Kveton, Rui Song
   - Key:  efficient and safe data collection for bandit policy evaluation.
   - ExpEnv: [multi-armed bandit](https://en.wikipedia.org/wiki/Multi-armed_bandit), contextual multi-armed bandit, linear bandits
-
+  
+</details>
 
 ### ICLR 2022
+
+<details open>
+<summary>(Click to Collapse)</summary>
 
 - [The Information Geometry of Unsupervised Reinforcement Learning](https://openreview.net/pdf?id=3wU2UX0voE) (Oral: 8, 8, 8)
    - Benjamin Eysenbach, Ruslan Salakhutdinov, Sergey Levine
@@ -478,8 +517,12 @@ format:
   - Key: Monte Carlo exploring starts, optimal policy feed-forward MDPs
   - ExpEnv: [blackjack](https://github.com/topics/blackjack-game), cliff Walking
   
+</details>
 
 ### NeurIPS 2021
+
+<details open>
+<summary>(Click to Collapse)</summary>
 
 - [Interesting Object, Curious Agent: Learning Task-Agnostic Exploration](https://arxiv.org/abs/2111.13119) (Oral: 9, 8, 8, 8)
   - Simone Parisi, Victoria Dean,Deepak Pathak, Abhinav Gupta
@@ -551,6 +594,8 @@ format:
     - Key: decomposition of the mutual information, particle estimator, contrastive learning
     - ExpEnv: [URLB](https://openreview.net/pdf?id=lwrPkQP_is)
     
+</details>
+
 ## Contributing
 Our purpose is to provide a starting paper guide to who are interested in exploration methods in RL.
 If you are interested in contributing, please refer to [HERE](CONTRIBUTING.md) for instructions in contribution.
