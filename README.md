@@ -25,7 +25,7 @@ in order to learn the skills required to achieve the goal.
 [comment]: <> (</center>)
 
 <p align="center">
-  <img src="./assets/minigrid_hard_exploration.png" alt="A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0" />
+  <img src="./assets/minigrid_hard_exploration.png" alt="A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0" width="30%" height="30%" />
 </p>
 
 ## Table of Contents
