@@ -10,22 +10,9 @@ In order to give readers an intuitive feeling for exploration, we provide a visu
 In this task, a series of actions to achieve the goal often require dozens or even hundreds of steps, in which the agent needs to fully explore different state-action spaces 
 in order to learn the skills required to achieve the goal.
 
-[comment]: <> (<center>)
-
-[comment]: <> (    <img style="border-radius: 0.3125em;)
-
-[comment]: <> (    box-shadow: 0 2px 4px 0 rgba&#40;34,36,38,.12&#41;,0 2px 10px 0 rgba&#40;34,36,38,.08&#41;;" )
-
-[comment]: <> (    src="./assets/minigrid_hard_exploration.png" width=40% height=40%>)
-
-[comment]: <> (    <br>)
-
-[comment]: <> (    <figcaption align = "center"><b>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</b></figcaption>)
-
-[comment]: <> (</center>)
-
 <p align="center">
-  <img src="./assets/minigrid_hard_exploration.png" alt="A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0" width="30%" height="30%" />
+  <img src="./assets/minigrid_hard_exploration.png" alt="Image Description" width="40%" height="40%" />
+  <em>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</em>
 </p>
 
 ## Table of Contents
@@ -109,7 +96,7 @@ Here are the links to the papers that appeared in the taxonomy:
 
 ```
 format:
-- [title](paper link) (publisher, openreview score [if the score is public])
+- [title](paper link) (presentation type, openreview score [if the score is public])
   - author1, author2, author3, ...
   - Key: key problems and insights
   - ExpEnv: experiment environments
