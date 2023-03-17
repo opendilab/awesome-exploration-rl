@@ -11,8 +11,8 @@ In this task, a series of actions to achieve the goal often require dozens or ev
 in order to learn the skills required to achieve the goal.
 
 <p align="center">
-  <img src="./assets/minigrid_hard_exploration.png" alt="Image Description" width="40%" height="40%" />
-  <em>A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</em>
+  <img src="./assets/minigrid_hard_exploration.png" alt="Image Description" width="40%" height="40%" /><br>
+  <em style="display: inline-block;">A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</em>
 </p>
 
 ## Table of Contents
