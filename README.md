@@ -285,6 +285,22 @@ format:
   - Key: zero-shot RL agent, disentangle universal representation learning from exploration, SFs with Laplacian eigenfunctions
   - ExpEnv: Unsupervised RL and ExORL benchmarks
 
+- [Human-level Atari 200x faster](https://openreview.net/pdf?id=JtC6yOHRoJJ) (Poster: 8, 8, 3)
+  - Steven Kapturowski, Víctor Campos, Ray Jiang, Nemanja Rakicevic, Hado van Hasselt, Charles Blundell, Adria Puigdomenech Badia
+  - Key: 200-fold reduction of experience, a more robust and efficient agent.
+  - ExpEnv: Atari 57
+
+- [Learning Achievement Structure for Structured Exploration in Domains with Sparse Reward](https://openreview.net/pdf?id=NDWl9qcUpvy) (Poster: 8, 8, 5, 5)
+  - Zihan Zhou, Animesh Garg
+  - Key: achievement-based environments, recovered dependency graph.
+  - ExpEnv: Crafter, TreeMaze
+
+- [Safe Exploration Incurs Nearly No Additional Sample Complexity for Reward-Free RL](https://openreview.net/pdf?id=wNUgn1n6esQ) (Poster: 8, 8, 6, 6)
+  - Ruiquan Huang, Jing Yang, Yingbin Liang
+  - Key: reward-free reinforcement learning, reduce the uncertainty in the estimated model with minimum
+  number of trajectories.
+  - ExpEnv: tabular MDPs, Low-rank MDP
+
 - [Latent State Marginalization as a Low-cost Approach to Improving Exploration](https://openreview.net/pdf?id=b0UksKFcTOL) (Poster: 6, 6, 6)
   - Dinghuai Zhang, Aaron Courville, Yoshua Bengio, Qinqing Zheng, Amy Zhang, Ricky T. Q. Chen
   - Key: adoption of latent variable policies within the MaxEnt framework, low-cost marginalization of the latent state
