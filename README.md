@@ -11,7 +11,7 @@ In this task, a series of actions to achieve the goal often require dozens or ev
 in order to learn the skills required to achieve the goal.
 
 <p align="center">
-  <img src="./assets/minigrid_hard_exploration.png" alt="Image Description" width="40%" height="40%" /><br>
+  <img src="./assets/minigrid_hard_exploration.png" alt="minigrid_hard_exploration" width="40%" height="40%" /><br>
   <em style="display: inline-block;">A typical hard-exploration environment: MiniGrid-ObstructedMaze-Full-v0.</em>
 </p>
 
@@ -337,6 +337,11 @@ format:
   - Key: transition dynamics modeling, multi-choice dynamics model, sampling efficiency
   - ExpEnv: URLB
   
+- [The Role of Coverage in Online Reinforcement Learning](https://openreview.net/pdf?id=LQIjzPdDt3q) (Oral: 8, 8, 5)
+  - Tengyang Xie, Dylan J Foster, Yu Bai, Nan Jiang, Sham M. Kakade
+  - Key: coverage conditions, data logging distribution, sample-efficient exploration, sequential extrapolation coefficient
+  - ExpEnv: None
+
 </details>
 
 ### NeurIPS 2022
