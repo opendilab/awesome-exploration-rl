@@ -270,6 +270,16 @@ format:
   - Jiajun Fan, Yuzheng Zhuang, Yuecheng Liu, Jianye HAO, Bin Wang, Jiangcheng Zhu, Hao Wang, Shu-Tao Xia
   - Key: Learnable Behavioral Control, hybrid behavior mapping, a unified learnable process for behavior selection, bandit-based metacontrollers
   - ExpEnv: [Atari](https://github.com/openai/gym)
+  
+- [The Role of Coverage in Online Reinforcement Learning](https://openreview.net/pdf?id=LQIjzPdDt3q) (Oral: 8, 8, 5)
+  - Tengyang Xie, Dylan J Foster, Yu Bai, Nan Jiang, Sham M. Kakade
+  - Key: coverage conditions, data logging distribution, sample-efficient exploration, sequential extrapolation coefficient
+  - ExpEnv: None
+
+- [Near-optimal Policy Identification in Active Reinforcement Learning ](https://openreview.net/forum?id=3OR2tbtnYC-) (oral: 8,8,8)
+   - Xiang Li, Viraj Mehta, Johannes Kirschner, Ian Char, Willie Neiswanger, Jeff Schneider, Andreas Krause, Ilija Bogunovic
+   - Key: kernelized least-squares value iteration, combines optimism with pessimism for active exploration
+   - ExpEnv: Cartpole, Navigation, Tracking, Rotation, Branin-Hoo, Hartmann
 
 - [Planning Goals for Exploration](https://openreview.net/pdf?id=6qeBuZSo7Pr) (Spotlight: 8, 8, 8, 8, 6)
   - Edward S. Hu, Richard Chang, Oleh Rybkin, Dinesh Jayaraman
@@ -336,11 +346,7 @@ format:
   - Yifu Yuan, Jianye HAO, Fei Ni, Yao Mu, YAN ZHENG, Yujing Hu, Jinyi Liu, Yingfeng Chen, Changjie Fan
   - Key: transition dynamics modeling, multi-choice dynamics model, sampling efficiency
   - ExpEnv: URLB
-  
-- [The Role of Coverage in Online Reinforcement Learning](https://openreview.net/pdf?id=LQIjzPdDt3q) (Oral: 8, 8, 5)
-  - Tengyang Xie, Dylan J Foster, Yu Bai, Nan Jiang, Sham M. Kakade
-  - Key: coverage conditions, data logging distribution, sample-efficient exploration, sequential extrapolation coefficient
-  - ExpEnv: None
+
 
 </details>
 
