@@ -269,20 +269,24 @@ format:
 
 - [A Study of Global and Episodic Bonuses for Exploration in Contextual MDPs](https://openreview.net/pdf?id=1CqtvwHTKQ)
   - Mikael Henaff, Minqi Jiang, Roberta Raileanu
-  - Key: global novelty bonuses, episodic novelty bonuses, shared structure, 
+  - Key: global novelty bonuses, episodic novelty bonuses, shared structure
   - ExpEnv: Mini-Hack suite, Habitat and Montezuma’s Revenge
+
 - [Curiosity in Hindsight: Intrinsic Exploration in Stochastic Environments](https://openreview.net/pdf?id=fIH2G4fnSy)
   - Daniel Jarrett, Corentin Tallec, Florent Altché, Thomas Mesnard, Rémi Munos, Michal Valko
   - Key: stochastic environments, disentangle “noise” from “novelty”, BYOL-Hindsight
   - ExpEnv: Pycolab Maze, Atari, Bank Heist
+
 - [Representations and Exploration for Deep Reinforcement Learning using Singular Value Decomposition](https://openreview.net/pdf?id=p9wFuLpp0O)
   - Yash Chandak, Shantanu Thakoor, Zhaohan Daniel Guo, Yunhao Tang, Remi Munos, Will Dabney, Diana Borsa
   - Key: singular value decomposition, relative frequency of state visitations, scale this decomposition method to large-scale domains
   - ExpEnv: DMLab-30, DM-Hard-8
+
 - [Reparameterized Policy Learning for Multimodal Trajectory Optimization](https://openreview.net/pdf?id=5Akrk9Ln6N)
    - Zhiao Huang, Litian Liang, Zhan Ling, Xuanlin Li, Chuang Gan, Hao Su
    - Key: multimodal policy parameterization, a generative model of optimal trajectories
    - ExpEnv: bandit, MetaWorld, 2D maze
+
 - [Flipping Coins to Estimate Pseudocounts for Exploration in Reinforcement Learning ](https://openreview.net/pdf?id=4RvcXByvnR)
    - Sam Lobel, Akhil Bagaria, George Konidaris
    - Key: count-based exploration, veraging samples from the Rademacher distribution (or coin flips)
@@ -305,7 +309,7 @@ format:
   - Key: coverage conditions, data logging distribution, sample-efficient exploration, sequential extrapolation coefficient
   - ExpEnv: None
 
-- [Near-optimal Policy Identification in Active Reinforcement Learning ](https://openreview.net/forum?id=3OR2tbtnYC-) (oral: 8,8,8)
+- [Near-optimal Policy Identification in Active Reinforcement Learning ](https://openreview.net/forum?id=3OR2tbtnYC-) (Oral: 8,8,8)
    - Xiang Li, Viraj Mehta, Johannes Kirschner, Ian Char, Willie Neiswanger, Jeff Schneider, Andreas Krause, Ilija Bogunovic
    - Key: kernelized least-squares value iteration, combines optimism with pessimism for active exploration
    - ExpEnv: Cartpole, Navigation, Tracking, Rotation, Branin-Hoo, Hartmann
