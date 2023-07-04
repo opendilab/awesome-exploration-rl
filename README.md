@@ -20,6 +20,7 @@ in order to learn the skills required to achieve the goal.
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
+  - [ICML 2023](#icml-2023)
   - [ICLR 2023](#iclr-2023)
   - [NeurIPS 2022](#neurips-2022)
   - [ICML 2022](#icml-2022)
@@ -261,6 +262,34 @@ format:
 
 </details>
 
+### ICML 2023
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [A Study of Global and Episodic Bonuses for Exploration in Contextual MDPs](https://openreview.net/pdf?id=1CqtvwHTKQ)
+  - Mikael Henaff, Minqi Jiang, Roberta Raileanu
+  - Key: global novelty bonuses, episodic novelty bonuses, shared structure, 
+  - ExpEnv: Mini-Hack suite, Habitat and Montezuma’s Revenge
+- [Curiosity in Hindsight: Intrinsic Exploration in Stochastic Environments](https://openreview.net/pdf?id=fIH2G4fnSy)
+  - Daniel Jarrett, Corentin Tallec, Florent Altché, Thomas Mesnard, Rémi Munos, Michal Valko
+  - Key: stochastic environments, disentangle “noise” from “novelty”, BYOL-Hindsight
+  - ExpEnv: Pycolab Maze, Atari, Bank Heist
+- [Representations and Exploration for Deep Reinforcement Learning using Singular Value Decomposition](https://openreview.net/pdf?id=p9wFuLpp0O)
+  - Yash Chandak, Shantanu Thakoor, Zhaohan Daniel Guo, Yunhao Tang, Remi Munos, Will Dabney, Diana Borsa
+  - Key: singular value decomposition, relative frequency of state visitations, scale this decomposition method to large-scale domains
+  - ExpEnv: DMLab-30, DM-Hard-8
+- [Reparameterized Policy Learning for Multimodal Trajectory Optimization](https://openreview.net/pdf?id=5Akrk9Ln6N)
+   - Zhiao Huang, Litian Liang, Zhan Ling, Xuanlin Li, Chuang Gan, Hao Su
+   - Key: multimodal policy parameterization, a generative model of optimal trajectories
+   - ExpEnv: bandit, MetaWorld, 2D maze
+- [Flipping Coins to Estimate Pseudocounts for Exploration in Reinforcement Learning ](https://openreview.net/pdf?id=4RvcXByvnR)
+   - Sam Lobel, Akhil Bagaria, George Konidaris
+   - Key: count-based exploration, veraging samples from the Rademacher distribution (or coin flips)
+   - ExpEnv: Atari, D4RL, FETCH
+
+</details>
+
 ### ICLR 2023
 
 <details open>
@@ -293,27 +322,27 @@ format:
 
 - [Learning About Progress From Experts](https://openreview.net/pdf?id=sKc6fgce1zs) (Spotlight: 8, 8, 6)
   - Jake Bruce, Ankit Anand, Bogdan Mazoure, Rob Fergus
-  - Key: the use of expert demonstrations, long-horizon tasks, learn a monotonically increasing function that summarizes progress
+  - Key: the use of expert demonstrations, long-horizon tasks, learn a monotonically increasing function that summarizes progress.
   - ExpEnv: [NetHack](https://github.com/NetHack/NetHack)
 
 - [DEP-RL: Embodied Exploration for Reinforcement Learning in Overactuated and Musculoskeletal Systems](https://openreview.net/pdf?id=C-xa_D3oTj6) (Spotlight: 10, 8, 8, 8)
   - Pierre Schumacher, Daniel Haeufle, Dieter Büchler, Syn Schmitt, Georg Martius
-  - Key: large overactuated action spaces, differential extrinsic plasticity, state-space covering exploration
+  - Key: large overactuated action spaces, differential extrinsic plasticity, state-space covering exploration.
   - ExpEnv: musculoskeletal systems: torquearm, arm26, humanreacher, ostrich-foraging, ostrich-run, human-run, human-hop
 
 - [Does Zero-Shot Reinforcement Learning Exist?](https://openreview.net/pdf?id=MYEap_OcQI) (Spotlight: 10, 8, 8,3)
   - Ahmed Touati, Jérémy Rapin, Yann Ollivier
-  - Key: zero-shot RL agent, disentangle universal representation learning from exploration, SFs with Laplacian eigenfunctions
+  - Key: zero-shot RL agent, disentangle universal representation learning from exploration, SFs with Laplacian eigenfunctions.
   - ExpEnv: Unsupervised RL and ExORL benchmarks
 
 - [Human-level Atari 200x faster](https://openreview.net/pdf?id=JtC6yOHRoJJ) (Poster: 8, 8, 3)
   - Steven Kapturowski, Víctor Campos, Ray Jiang, Nemanja Rakicevic, Hado van Hasselt, Charles Blundell, Adria Puigdomenech Badia
-  - Key: 200-fold reduction of experience, a more robust and efficient agent.
+  - Key: 200-fold reduction of experience, a more robust and efficient agent
   - ExpEnv: Atari 57
 
 - [Learning Achievement Structure for Structured Exploration in Domains with Sparse Reward](https://openreview.net/pdf?id=NDWl9qcUpvy) (Poster: 8, 8, 5, 5)
   - Zihan Zhou, Animesh Garg
-  - Key: achievement-based environments, recovered dependency graph.
+  - Key: achievement-based environments, recovered dependency graph
   - ExpEnv: Crafter, TreeMaze
 
 - [Safe Exploration Incurs Nearly No Additional Sample Complexity for Reward-Free RL](https://openreview.net/pdf?id=wNUgn1n6esQ) (Poster: 8, 8, 6, 6)
@@ -329,7 +358,7 @@ format:
 
 - [Revisiting Curiosity for Exploration in Procedurally Generated Environments](https://openreview.net/pdf?id=j3GK3_xZydY) (Poster: 8, 8, 5, 3, 3)
   - Kaixin Wang, Kuangqi Zhou, Bingyi Kang, Jiashi Feng, Shuicheng YAN
-  - Key: lifelong intrinsic rewards and episodic intrinsic rewards，the performance of all lifelong-episodic combinations.
+  - Key: lifelong intrinsic rewards and episodic intrinsic rewards，the performance of all lifelong-episodic combinations
   - ExpEnv: [MiniGrid](https://github.com/Farama-Foundation/Minigrid)
 
 - [MoDem: Accelerating Visual Model-Based Reinforcement Learning with Demonstrations](https://openreview.net/pdf?id=JdTnc9gjVfJ) (Poster: 8, 6, 6, 6)
@@ -347,6 +376,10 @@ format:
   - Key: transition dynamics modeling, multi-choice dynamics model, sampling efficiency
   - ExpEnv: URLB
 
+- [Guarded Policy Optimization with Imperfect Online Demonstrations](https://openreview.net/pdf?id=O5rKg7IRQIO) (Oral: 8, 8, 6, 5)
+  - Zhenghai Xue, Zhenghao Peng, Quanyi Li, Zhihan Liu, Bolei Zhou
+  - Key: teacher-student shared control, safety guarantee and exploration guidance, trajectory-based value estimation
+  - ExpEnv: MetaDrive
 
 </details>
 
