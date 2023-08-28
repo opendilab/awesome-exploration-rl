@@ -292,6 +292,66 @@ format:
    - Key: count-based exploration, veraging samples from the Rademacher distribution (or coin flips)
    - ExpEnv: Atari, D4RL, FETCH
 
+- [Fast Rates for Maximum Entropy Exploration](https://openreview.net/pdf?id=wcUppxYfLH)
+  - Daniil Tiapkin, Denis Belomestny, Daniele Calandriello, Éric Moulines, Rémi Munos, Alexey Naumov, Pierre Perrault, Yunhao Tang, Michal Valko, Pierre Ménard
+  - Key: visitation entropy maximization, game-theoretic algorithm, trajectory entropy
+  - ExpEnv: Double Chain MDP
+
+- [Guiding Pretraining in Reinforcement Learning with Large Language Models](https://openreview.net/pdf?id=63704LH4v5)
+  - Yuqing Du, OliviaWatkins, Zihan Wang, CÅLedric Colas, Trevor Darrell, Pieter Abbeel, Abhishek Gupta, Jacob Andreas
+  - Key: uses background knowledge from text corpora to shape exploration, rewards an agent for achieving goals suggested by a language model prompted with a description of the agent’s current state.
+  - ExpEnv: Crafter, Housekeep
+
+- [Do Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling](https://openreview.net/pdf?id=Rm5Qi57C5I)
+  - Kolby Nottingham, Prithviraj Ammanabrolu, Alane Suhr, Yejin Choi, Hannaneh Hajishirzi, Sameer Singh, Roy Fox
+  - Key: Abstract World Model (AWM) for planning and exploration, LLM-guided exploration, Dream phase and Wake phase, 
+  - ExpEnv: Minecraft
+
+- [Cell-Free Latent Go-Explore](https://openreview.net/pdf?id=4TtG42xJvC)
+  - Quentin GallouÅLedec, Emmanuel DellandrÅLea
+  - Key: Latent Go-Explore, a learned latent representation
+  - ExpEnv: 2D maze, panda-gym, Atari
+
+- [Go Beyond Imagination: Maximizing Episodic Reachability with World Models](https://openreview.net/pdf?id=JsAMuzA9o2)
+  - Yao Fu, Run Peng, Honglak Lee
+  - Key: an episodic intrinsic reward that is designed to maximize the stepwise reachability expansion
+  - ExpEnv: Minigrid, DeepMind Control Suite
+
+- [Efficient Online Reinforcement Learning with Offline Data](https://openreview.net/pdf?id=h11j9w1ucU)
+  - Philip J. Ball, Laura Smith, Ilya Kostrikov, Sergey Levine
+  - Key: Sample efficiency and exploration, simply apply existing off-policy methods to leverage offline data when learning online, key factors that most affect performance,  a set of recommendations
+  - ExpEnv: D4RL AntMaze, Locomotion, Adroit
+
+- [Anti-Exploration by Random Network Distillation](https://openreview.net/pdf?id=NRQ5lC8Dit)
+  - Alexander Nikulin, Vladislav Kurenkov, Denis Tarasov, Sergey Kolesnikov
+  - Key: an uncertainty estimator, anti-exploration bonus, Feature-wise Linear Modulation
+  - ExpEnv: D4RL
+
+- [The Impact of Exploration on Convergence and Performance of Multi-Agent Q-Learning Dynamics](https://openreview.net/pdf?id=agPrVQdnxT)
+  - Aamal Hussain, Francesco Belardinelli, Dario Paccagnan
+  - Key: How does exploration affect reinforcement learning dynamics in arbitrary games, even if convergence to an equilibrium cannot be guaranteed?
+  - ExpEnv: Network Shapley Game, Network Chakraborty Game, Arbitrary Games
+
+- [An Adaptive Entropy-Regularization Framework for Multi-Agent Reinforcement Learning](https://openreview.net/pdf?id=MP7HOGfLf3)
+  - Woojun Kim, Youngchul Sung
+  - Key: adaptive entropyregularization framework, proper level of exploration entropy, disentangled value function
+  - ExpEnv: SMAC, multi-agent HalfCheetah
+
+- [Lazy Agents: A New Perspective on Solving Sparse Reward Problem in Multi-agent Reinforcement Learning](https://openreview.net/pdf?id=DRu5BlRqrn)
+  - Boyin Liu, Zhiqiang Pu, Yi Pan, Jianqiang Yi, Yanyan Liang, Du Zhang
+  - Key: Lazy Agents Avoidance through Influencing External States, individual diligence intrinsic motivation (IDI) and collaborative diligence intrinsic motivation (CDI), external states transition model
+  - ExpEnv: SMAC, Google Research Football
+
+- [Automatic Intrinsic Reward Shaping for Exploration in Deep Reinforcement Learning](https://openreview.net/pdf?id=UyJJ1pnb0y)
+  - Mingqi Yuan, Bo Li, Xin Jin, Wenjun Zeng
+  - Key: selects shaping function from a predefined set, an intrinsic reward toolkit
+  - ExpEnv: MiniGrid, Procgen, and DeepMind Control Suite
+
+- [LESSON: Learning to Integrate Exploration Strategies for Reinforcement Learning via an Option Framework](https://openreview.net/pdf?id=vXcvrYJlVm)
+  - Woojun Kim, Jeonghye Kim, Youngchul Sung
+  - Key: option-critic model, adaptively select the most effective exploration strategy
+  - ExpEnv: MiniGrid and Atari
+
 </details>
 
 ### ICLR 2023
