@@ -1,11 +1,13 @@
+<div id="top"></div>
+
 # Awesome Exploration Methods in Reinforcement Learning 
 
-Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
-The repository will be continuously updated to track the frontier of ERL. 
+`Updated on 2023.12.22`
 
-Welcome to follow and star!
+- Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
+The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
 
-The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
+- The balance of **exploration and exploitation** is one of the most central problems in reinforcement learning.
 In order to give readers an intuitive feeling for exploration, we provide a visualization of a typical hard exploration environment in [MiniGrid](https://github.com/Farama-Foundation/Minigrid) below.
 In this task, a series of actions to achieve the goal often require dozens or even hundreds of steps, in which the agent needs to fully explore different state-action spaces 
 in order to learn the skills required to achieve the goal.
@@ -20,6 +22,7 @@ in order to learn the skills required to achieve the goal.
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
+  - [NeurIPS 2023](#neurips-2023)
   - [ICML 2023](#icml-2023)
   - [ICLR 2023](#iclr-2023)
   - [NeurIPS 2022](#neurips-2022)
@@ -262,6 +265,73 @@ format:
 
 </details>
 
+### NeurIPS 2023
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [On the Importance of Exploration for Generalization in Reinforcement Learning](https://openreview.net/pdf?id=y5duN2j9s6)
+  - Yiding Jiang, J Zico Kolter, Roberta Raileanu
+  - Key: exploration, generalization, Exploration via Distributional Ensemble,
+  - ExpEnv: tabular contextual MDP, Procgen and Crafter
+
+- [Monte Carlo Tree Search with Boltzmann Exploration](https://openreview.net/pdf?id=NG4DaApavi) 
+  - Michael Painter, Mohamed Baioumy, Nick Hawes, Bruno Lacerda
+  - Key: Boltzmann exploration with MCTS, optimal actions for the maximum entropy objective do not necessarily correspond to optimal actions for the original objective, two improved algorithms.
+  - ExpEnv: the Frozen Lake environment, the Sailing Problem, Go
+
+- [Breadcrumbs to the Goal: Supervised Goal Selection from Human-in-the-Loop Feedback](https://arxiv.org/abs/2307.11049gst)
+  - Marcel Torne Villasevil, Max Balsells I Pamies, Zihan Wang, Samedh Desai, Tao Chen, Pulkit Agrawal, Abhishek Gupta
+  - Key: human-in-the-loop feedback, bifurcating human feedback and policy learning
+  - ExpEnv: Bandu, Block Stacking, Kitchen, and Pusher，Four rooms and Maze
+
+- [MIMEx: Intrinsic Rewards from Masked Input Modeling](https://openreview.net/pdf?id=g1dMYenhe4)
+  - Toru Lin, Allan Jabri
+  - Key: pseudo-likelihood estimation with different mask distributions,
+  - ExpEnv: PixMC-Sparse, DeepMind Control suite
+
+- [Accelerating Exploration with Unlabeled Prior Data](https://openreview.net/pdf?id=Itorzn4Kwf)
+  - Qiyang Li, Jason Zhang, Dibya Ghosh, Amy Zhang, Sergey Levine
+  - Key: prior data without reward labels, learns a reward model from online experience, labels the unlabeled prior data with optimistic rewards
+  - ExpEnv: AntMaze domain, Adroit hand manipulation domain, and a visual simulated robotic manipulation domain.
+
+- [On the Convergence and Sample Complexity Analysis of Deep Q-Networks with ε-Greedy Exploration](https://openreview.net/pdf?id=HWGWeaN76q)
+  - Shuai Zhang, Hongkang Li, Meng Wang, Miao Liu, Pin-Yu Chen, Songtao Lu, Sijia Liu, Keerthiram Murugesan, Subhajit Chaudhury
+  - Key: ε-greedy exploration, convergence, sample complexity
+  - ExpEnv: Numerical Experiments
+
+- [Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion](https://openreview.net/pdf?id=v8u3EFAyW9)
+  - Taehyun Cho, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee
+  - Key: distributional reinforcement learning, randomizing risk criterion, optimistic exploration
+  - ExpEnv: Atari 55 games.
+
+- [CQM: Curriculum Reinforcement Learning with a Quantized World Model](https://openreview.net/pdf?id=tcotyjon2a)
+  - Seungjae Lee, Daesol Cho, Jonghae Park, H. Jin Kim
+  - Key: curriculum reinforcement learning, quantized world model, quantized world model
+  - ExpEnv: PointNMaze
+
+- [Safe Exploration in Reinforcement Learning: A Generalized Formulation and Algorithms](https://openreview.net/pdf?id=dQLsvKNwZC)
+  - Akifumi Wachi, Wataru Hashimoto, Xun Shen, Kazumune Hashimoto
+  - Key: safe exploration, generalized formulation, safe exploration algorithms, Meta-Algorithm for Safe Exploration
+  - ExpEnv: grid-world and Safety Gym
+
+- [Successor-Predecessor Intrinsic Exploration](https://openreview.net/pdf?id=ohKbQp0jIY)
+  - Changmin Yu, Neil Burgess, Maneesh Sahani, Samuel J. Gershman
+  - Key: retrospective structure of transition sequences, combining prospective and retrospective information
+  - ExpEnv: grid worlds, MountainCar, Atari
+  
+- [Accelerating Reinforcement Learning with Value-Conditional State Entropy Exploration](https://arxiv.org/abs/2305.19476)
+  - Dongyoung Kim, Jinwoo Shin, Pieter Abbeel, Younggyo Seo
+  - Key: value-conditional state entropy exploration
+  - ExpEnv: MiniGrid, DeepMind Control Suite, and Meta-World
+
+- [ELDEN: Exploration via Local Dependencies](https://openreview.net/pdf?id=sL4pJBXkxu)
+  - Zizhao Wang, Jiaheng Hu, Peter Stone, Roberto Martín-Martín
+  - Key: local dependencies, exploration bonus, intrinsic motivation, encourages the discovery of new interactions between entities
+  - ExpEnv: 2D grid worlds to 3D robotic tasks
+
+</details>
+
 ### ICML 2023
 
 <details open>
@@ -353,6 +423,7 @@ format:
   - ExpEnv: MiniGrid and Atari
 
 </details>
+
 
 ### ICLR 2023
 
@@ -698,3 +769,5 @@ If you are interested in contributing, please refer to [HERE](CONTRIBUTING.md) f
 
 ## License
 Awesome Exploration RL is released under the Apache 2.0 license.
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
