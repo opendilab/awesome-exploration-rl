@@ -22,6 +22,7 @@ in order to learn the skills required to achieve the goal.
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
   - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
+  - [ICLR 2024](#iclr-2024)
   - [NeurIPS 2023](#neurips-2023)
   - [ICML 2023](#icml-2023)
   - [ICLR 2023](#iclr-2023)
@@ -262,6 +263,63 @@ format:
   - Adrien Ecoffet, Joost Huizinga, Joel Lehman, Kenneth O. Stanley, Jeff Clune
   - Key:  detachment and derailment, remembering states, returning to them, and exploring from them
   - ExpEnv: [Atari](https://github.com/openai/gym), pick-and-place robotics task
+
+</details>
+
+### ICLR 2024
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [A Theoretical Explanation of Deep RL Performance in Stochastic Environments](https://openreview.net/forum?id=5ES5Hdlbxw)
+  - Cassidy Laidlaw, Banghua Zhu, Stuart Russell, Anca Dragan
+  - Key: Stochastic Environments, effective horizon, RL theory, instance-dependent bounds, empirical validation of theory
+  - ExpEnv: BRIDGE
+
+- [DrM: Mastering Visual Reinforcement Learning through Dormant Ratio Minimization](https://openreview.net/forum?id=MSe8YFbhUE)
+  - Guowei Xu, Ruijie Zheng, Yongyuan Liang, Xiyao Wang, Zhecheng Yuan, Tianying Ji, Yu Luo, Xiaoyu Liu, Jiaxin Yuan, Pu Hua, Shuzhen Li, Yanjie Ze, Hal Daumé III, Furong Huang, Huazhe Xu
+  - Key: Visual RL, Dormant Ratio Minimization, Exploration
+  - ExpEnv:DeepMind Control Suite, MetaWorld, and Adroit
+
+- [METRA: Scalable Unsupervised RL with Metric-Aware Abstraction](https://openreview.net/forum?id=c5pwL0Soay)
+  - Seohong Park, Oleh Rybkin, Sergey Levine
+  - Key: unsupervised RL, metric-aware abstraction, scalable exploration
+  - ExpEnv: state-based Ant and HalfCheetah, Kitchen
+
+- [Text2Reward: Reward Shaping with Language Models for Reinforcement Learning](https://openreview.net/forum?id=tUM39YTRxH)
+  - Tianbao Xie, Siheng Zhao, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
+  - Key: reward shaping, language models, text-based reward shaping
+  - ExpEnv: MUJOCO, MANISKILL2, METAWORLD
+
+- [Pre-Training Goal-based Models for Sample-Efficient Reinforcement Learning](https://openreview.net/forum?id=o2IEmeLL9r)
+  - Haoqi Yuan, Zhancun Mu, Feiyang Xie, Zongqing Lu
+  - Key: goal-based models, pre-training, sample efficiency
+  - ExpEnv: Kitchen, Minecraft.
+
+- [Efficient Episodic Memory Utilization of Cooperative Multi-Agent Reinforcement Learning](https://openreview.net/forum?id=LjivA1SLZ6)
+  - Hyungho Na, Yunkyeong Seo, Il-chul Moon
+  - Key: episodic memory, cooperative multi-agent, efficient utilization
+  - ExpEnv: StarCraft II and Google Research Football
+
+- [Simple Hierarchical Planning with Diffusion](https://openreview.net/forum?id=kXHEBK9uAY)
+  - Chang Chen, Fei Deng, Kenji Kawaguchi, Caglar Gulcehre, Sungjin Ahn
+  - Key: hierarchical planning, diffusion, exploration
+  - ExpEnv: Maze2D and AntMaze
+
+- [Sample Efficient Myopic Exploration Through Multitask Reinforcement Learning with Diverse Tasks](https://openreview.net/forum?id=YZrg56G0JV)
+  - Ziping Xu, Zifan Xu, Runxuan Jiang, Peter Stone, Ambuj Tewari
+  - Key: myopic exploration, multitask reinforcement learning, diverse tasks
+  - ExpEnv: synthetic robotic control environment
+
+- [PAE: Reinforcement Learning from External Knowledge for Efficient Exploration](https://openreview.net/forum?id=R7rZUSGOPD)
+  - Zhe Wu, Haofei Lu, Junliang Xing, You Wu, Renye Yan, Yaozhong Gan, Yuanchun Shi
+  - Key: external knowledge, efficient exploration, reinforcement learning
+  - ExpEnv: BabyAI and MiniHack
+
+- [In-context Exploration-Exploitation for Reinforcement Learning](https://openreview.net/forum?id=uIKZSStON3)
+  - Zhenwen Dai, Federico Tomasi, Sina Ghiassian
+  - Key: in-context exploration-exploitation, reinforcement learning, exploration-exploitation trade-off
+  - ExpEnv: Dark Room, Dark Key-to-Door, Dark Room (Biased).
 
 </details>
 
