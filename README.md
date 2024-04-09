@@ -162,6 +162,21 @@ format:
   - Key: in-context exploration-exploitation, reinforcement learning, exploration-exploitation trade-off
   - ExpEnv: Dark Room, Dark Key-to-Door, Dark Room (Biased).
 
+- [Transformers as Decision Makers: Provable In-Context Reinforcement Learning via Supervised Pretraining](https://openreview.net/pdf?id=yN4Wv17ss3)
+  - Licong Lin, Yu Bai, Song Mei
+  - Key: transformers, decision makers, in-context reinforcement learning
+  - ExpEnv: Linear bandit, Bernoulli bandits.
+
+- [Learning to Act without Actions](https://openreview.net/pdf?id=rvUq3cxpDF)
+  - Dominik Schmidt, Minqi Jiang
+  - Key: recovering latent action information, video, pre-training
+  - ExpEnv: Procgen
+
+- [Consciousness-Inspired Spatio-Temporal Abstractions for Better Generalization in Reinforcement Learning](https://openreview.net/pdf?id=eo9dHwtTFt)
+  - Mingde Zhao, Safa Alver, Harm van Seijen, Romain Laroche, Doina Precup, Yoshua Bengio
+  - Key: spatio-temporal abstractions, hierarchical planning, task/goal decomposition
+  - ExpEnv: MiniGrid-BabyAI, 
+
 </details>
 
 ### NeurIPS 2023
