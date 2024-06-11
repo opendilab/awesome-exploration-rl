@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2024.03.07`
+`Updated on 2024.06.12`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
