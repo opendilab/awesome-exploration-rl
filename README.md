@@ -112,6 +112,11 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [Unlocking the Power of Representations in Long-term Novelty-based Exploration](https://openreview.net/pdf?id=OwtMhMSybu)
+  - Alaa Saade, Steven Kapturowski, Daniele Calandriello, Charles Blundell, Pablo Sprechmann, Leopoldo Sarra, Oliver Groth, Michal Valko, Bilal Piot
+  - Key: Robust Exploration via Clustering-based Online Density Estimation
+  - ExpEnv: Atari, DM-HARD-8
+
 - [A Theoretical Explanation of Deep RL Performance in Stochastic Environments](https://openreview.net/forum?id=5ES5Hdlbxw)
   - Cassidy Laidlaw, Banghua Zhu, Stuart Russell, Anca Dragan
   - Key: Stochastic Environments, effective horizon, RL theory, instance-dependent bounds, empirical validation of theory
@@ -175,7 +180,7 @@ format:
 - [Consciousness-Inspired Spatio-Temporal Abstractions for Better Generalization in Reinforcement Learning](https://openreview.net/pdf?id=eo9dHwtTFt)
   - Mingde Zhao, Safa Alver, Harm van Seijen, Romain Laroche, Doina Precup, Yoshua Bengio
   - Key: spatio-temporal abstractions, hierarchical planning, task/goal decomposition
-  - ExpEnv: MiniGrid-BabyAI, 
+  - ExpEnv: MiniGrid-BabyAI
 
 </details>
 
@@ -184,9 +189,14 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration](https://openreview.net/pdf?id=A57UMlUJdc)
+  - Zhihan Liu, Miao Lu, Wei Xiong, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang
+  - Key: a single objective that integrates the estimation and planning components, balancing exploration and exploitation automatically, sublinear regret
+  - ExpEnv: MuJoCo with sparse reward
+
 - [On the Importance of Exploration for Generalization in Reinforcement Learning](https://openreview.net/pdf?id=y5duN2j9s6)
   - Yiding Jiang, J Zico Kolter, Roberta Raileanu
-  - Key: exploration, generalization, Exploration via Distributional Ensemble,
+  - Key: exploration, generalization, Exploration via Distributional Ensemble
   - ExpEnv: tabular contextual MDP, Procgen and Crafter
 
 - [Monte Carlo Tree Search with Boltzmann Exploration](https://openreview.net/pdf?id=NG4DaApavi) 
