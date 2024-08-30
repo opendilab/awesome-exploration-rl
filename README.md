@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2024.03.07`
+`Updated on 2024.08.30`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -21,7 +21,8 @@ in order to learn the skills required to achieve the goal.
 
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
-  - [ICLR 2024🔥](#iclr-2024)
+  - [ICML 2024🔥](#icml-2024)
+  - [ICLR 2024](#iclr-2024)
   - [NeurIPS 2023](#neurips-2023)
   - [ICML 2023](#icml-2023)
   - [ICLR 2023](#iclr-2023)
@@ -106,6 +107,63 @@ format:
   - Key: key problems and insights
   - ExpEnv: experiment environments
 ```
+
+### ICML 2024
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [ACE: Off-Policy Actor-Critic with Causality-Aware Entropy Regularization](https://openreview.net/pdf?id=OwtMhMSybu)
+  - Tianying Ji, Yongyuan Liang, Yan Zeng, Yu Luo, Guowei Xu, Jiawei Guo, Ruijie Zheng, Furong Huang, Fuchun Sun, Huazhe Xu
+  - Key: Off-policy Actor-critic with Causality-aware Entropy regularization, exploration, causality-aware entropy regularization
+  - ExpEnv: MetaWorld, DeepMind Control Suite, Dexterous Hand, Sparse Reward
+
+- [Random Latent Exploration for Deep Reinforcement Learning](https://openreview.net/forum?id=Y9qzwNlKVU)
+  - Srinath V. Mahankali, Zhang-Wei Hong, Ayush Sekhari, Alexander Rakhlin, Pulkit Agrawal
+  - Key: Random Latent Exploration, perturbing rewards by adding structured random rewards to the original task rewards
+  - ExpEnv: ATARI, ISAACGYM
+
+- [Exploration and Anti-Exploration with Distributional Random Network Distillation](https://openreview.net/forum?id=rIrpzmqRBk)
+  - Kai Yang, Jian Tao, Jiafei Lyu, Xiu Li
+  - Key: bonus inconsistency, Distributional Random Network Distillation, exploration and anti-exploration
+  - ExpEnv: Atari, Adroit, Fetch Manipulation Tasks
+
+- [Breadth-First Exploration on Adaptive Grid for Reinforcement Learning](https://openreview.net/pdf?id=59MYoLghyk)
+  - Youngsik Yoon, Gangbok Lee, Sungsoo Ahn, Jungseul Ok
+  - Key: Breadth-First Exploration, Adaptive Grid, Exploration Efficiency
+  - ExpEnv: GridWorld, Atari, Procgen
+
+- [Just Cluster It: An Approach for Exploration in High-Dimensions using Clustering and Pre-Trained Representations](https://openreview.net/forum?id=cXBPPfNUZJ)
+  - Stefan Sylvius Wagner, Stefan Harmeling
+  - Key: representation-centric perspective on exploration, clustering, pre-trained representations
+  - ExpEnv: VizDoom and Habitat
+
+- [Provably Efficient Long-Horizon Exploration in Monte Carlo Tree Search through State Occupancy Regularization](https://openreview.net/forum?id=UCKFhc9SFC)
+  - Liam Schramm, Abdeslam Boularias
+  - Key: Monte Carlo Tree Search, Long-Horizon Exploration, State Occupancy Regularization
+  - ExpEnv: robot navigation problems
+
+- [Efficient Exploration for LLMs](https://openreview.net/forum?id=PpPZ6W7rxy)
+  - Vikranth Dwaracherla, Seyed Mohammad Asghari, Botao Hao, Benjamin Van Roy
+  - Key: exploration, large language models, efficient exploration
+  - ExpEnv: Language Tasks
+
+- [Scalable Online Exploration via Coverability](https://openreview.net/forum?id=C64clssMVU)
+  - Philip Amortila, Dylan J Foster, Akshay Krishnamurthy
+  - Key: L1-Coverage, Intrinsic complexity control, Efficient planning, Efficient exploration
+  - ExpEnv: MountainCar
+
+- [Uncertainty-Aware Reward-Free Exploration with General Function Approximation](https://openreview.net/forum?id=BvBdYSIkpb)
+  - Junkai Zhang, Weitong Zhang, Dongruo Zhou, Quanquan Gu
+  - Key: uncertainty-aware intrinsic reward, reward-free exploration, general function approximation
+  - ExpEnv: DeepMind Control Suite
+
+- [Constrained Ensemble Exploration for Unsupervised Skill Discovery](https://openreview.net/forum?id=AOJCCFTlfJ)
+  - Chenjia Bai, Rushuai Yang, Qiaosheng Zhang, Kang Xu, Yi Chen, Ting Xiao, Xuelong Li
+  - Key: constrained ensemble exploration, unsupervised skill discovery, partition exploration based on the state prototypes
+  - ExpEnv: URLB tasks, maze
+
+</details>
 
 ### ICLR 2024
 
