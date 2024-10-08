@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2024.08.30`
+`Updated on 2024.10.08`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -162,6 +162,26 @@ format:
   - Chenjia Bai, Rushuai Yang, Qiaosheng Zhang, Kang Xu, Yi Chen, Ting Xiao, Xuelong Li
   - Key: constrained ensemble exploration, unsupervised skill discovery, partition exploration based on the state prototypes
   - ExpEnv: URLB tasks, maze
+
+- [Bayesian Exploration Networks](https://openreview.net/forum?id=OYw6sS8QmL)
+  - Mattie Fellows, Brandon Gary Kaplowitz, Christian Schroeder de Witt, Shimon Whiteson
+  - Key: Bayesian Exploration Networks, exploration, uncertainty estimation
+  - ExpEnv: a novel search and rescue gridworld MDP
+
+- [Geometric Active Exploration in Markov Decision Processes: the Benefit of Abstraction](https://openreview.net/pdf?id=2JYOxcGlRe)
+  - Riccardo De Santi, Federico Arangath Joseph, Noah Liniger, Mirco Mutti, Andreas Krause
+  - Key: geometric active exploration, abstraction, exploration efficiency
+  - ExpEnv: environments motivated by problems in scientific discovery
+
+- [Fast Peer Adaptation with Context-aware Exploration](https://openreview.net/forum?id=CBcNl5Eo32)
+  - Long Ma, Yuanfei Wang, Fangwei Zhong, Song-Chun Zhu, Yizhou Wang
+  - Key: peer adaptation, context-aware exploration, fast adaptation
+  - ExpEnv: competitive (Kuhn Poker), cooperative (PO-Overcooked), or mixed (Predator-Prey-W) games
+
+- [Individual Contributions as Intrinsic Exploration Scaffolds for Multi-agent Reinforcement Learning](https://openreview.net/pdf?id=zCmMkWK4Ly)
+  - Xinran Li, Zifan LIU, Shibo Chen, Jun Zhang
+  - Key: individual contributions, intrinsic exploration, multi-agent reinforcement learning
+  - ExpEnv: Google Research Football, SMAC
 
 </details>
 
