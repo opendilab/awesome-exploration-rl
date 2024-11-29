@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2024.10.08`
+`Updated on 2024.11.29`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -21,7 +21,8 @@ in order to learn the skills required to achieve the goal.
 
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
-  - [ICML 2024🔥](#icml-2024)
+  - [NeurIPS 2024🔥](#neurips-2024)
+  - [ICML 2024](#icml-2024)
   - [ICLR 2024](#iclr-2024)
   - [NeurIPS 2023](#neurips-2023)
   - [ICML 2023](#icml-2023)
@@ -107,6 +108,30 @@ format:
   - Key: key problems and insights
   - ExpEnv: experiment environments
 ```
+
+
+### NeurIPS 2024
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [Learning Formal Mathematics From Intrinsic Motivation](https://openreview.net/forum?id=uNKlTQ8mBD)  
+  - Gabriel Poesia, David Broman, Nick Haber, Noah Goodman  
+  - Key: Jointly learns to prove formal mathematical theorems and propose harder provable conjectures in a self-improving loop; utilizes dependent type theory and hindsight relabeling to improve sample efficiency.  
+  - ExpEnv: Propositional logic, arithmetic, and group theory.  
+
+- [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](https://openreview.net/forum?id=LEzx6QRkRH)  
+  - Shaoteng Liu, Haoqi Yuan, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, Zongqing Lu, Jiaya Jia  
+  - Key: Two-level hierarchical framework combining reinforcement learning and large language models (LLMs); achieves high efficiency by integrating coding for high-level planning with RL for low-level actions.  
+  - ExpEnv: Minecraft and MineDojo tasks, achieving SOTA performance.  
+
+- [SeeA*: Efficient Exploration-Enhanced A* Search by Selective Sampling](https://openreview.net/forum?id=mSaqxZVZW8)  
+  - Dengwei Zhao, Shikui Tu, Lei Xu  
+  - Key: Enhances A* search by constructing a dynamic OPEN subset through selective sampling, enabling exploration of promising branches; theoretical and empirical efficiency improvements.  
+  - ExpEnv: Retrosynthetic planning (organic chemistry), logic synthesis (IC design), and Sokoban game.
+  - 
+</details>
+
 
 ### ICML 2024
 
