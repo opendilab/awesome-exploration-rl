@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2024.11.29`
+`Updated on 2025.01.08`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -115,6 +115,11 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [SeeA*: Efficient Exploration-Enhanced A* Search by Selective Sampling](https://openreview.net/forum?id=mSaqxZVZW8)  
+  - Dengwei Zhao, Shikui Tu, Lei Xu  
+  - Key: Enhances A* search by constructing a dynamic OPEN subset through selective sampling, enabling exploration of promising branches; theoretical and empirical efficiency improvements.  
+  - ExpEnv: Retrosynthetic planning (organic chemistry), logic synthesis (IC design), and Sokoban game.
+
 - [Learning Formal Mathematics From Intrinsic Motivation](https://openreview.net/forum?id=uNKlTQ8mBD)  
   - Gabriel Poesia, David Broman, Nick Haber, Noah Goodman  
   - Key: Jointly learns to prove formal mathematical theorems and propose harder provable conjectures in a self-improving loop; utilizes dependent type theory and hindsight relabeling to improve sample efficiency.  
@@ -123,13 +128,54 @@ format:
 - [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](https://openreview.net/forum?id=LEzx6QRkRH)  
   - Shaoteng Liu, Haoqi Yuan, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, Zongqing Lu, Jiaya Jia  
   - Key: Two-level hierarchical framework combining reinforcement learning and large language models (LLMs); achieves high efficiency by integrating coding for high-level planning with RL for low-level actions.  
-  - ExpEnv: Minecraft and MineDojo tasks, achieving SOTA performance.  
+  - ExpEnv: Minecraft and MineDojo tasks.  
 
-- [SeeA*: Efficient Exploration-Enhanced A* Search by Selective Sampling](https://openreview.net/forum?id=mSaqxZVZW8)  
-  - Dengwei Zhao, Shikui Tu, Lei Xu  
-  - Key: Enhances A* search by constructing a dynamic OPEN subset through selective sampling, enabling exploration of promising branches; theoretical and empirical efficiency improvements.  
-  - ExpEnv: Retrosynthetic planning (organic chemistry), logic synthesis (IC design), and Sokoban game.
-  - 
+- [Beyond Optimism: Exploration With Partially Observable Rewards](https://arxiv.org/abs/2406.13909)
+  - Simone Parisi, Alireza Kazemipour, Michael Bowling
+  - Key: Reinforcement Learning, Partial Observability, Optimism, Exploration
+  - ExpEnv: Tabular Environments (with and without unobservable rewards)
+
+- [Exploring the Edges of Latent State Clusters for Goal-Conditioned Reinforcement Learning](https://arxiv.org/abs/2411.01396)  
+  - Yuanlin Duan, Guofeng Cui, He Zhu  
+  - Key: Goal-Conditioned Reinforcement Learning, Exploration, Latent Space Clustering  
+  - ExpEnv: Multi-legged Ant Maze, Robotic Arm Manipulation (cluttered tabletop), Anthropomorphic Hand Object Rotation
+
+- [Subwords as Skills: Tokenization for Sparse-Reward Reinforcement Learning](https://arxiv.org/abs/2309.04459)
+  - David Yunis, Justin Jung, Falcon Dai, Matthew Walter
+  - Key: Sparse-Reward Reinforcement Learning, Skill Generation, Tokenization, Continuous Action Spaces
+  - ExpEnv: Challenging Sparse-Reward Domains
+
+- [Adaptive Exploration for Data-Efficient General Value Function Evaluations](https://arxiv.org/abs/2405.07838)  
+  - Arushi Jain, Josiah P. Hanna, Doina Precup  
+  - Key: General Value Functions, Reinforcement Learning, Data Efficiency  
+  - ExpEnv: Tabular settings, Nonlinear function approximation, Mujoco environments (stationary and non-stationary reward signals)
+
+- [Leveraging Separated World Model for Exploration in Visually Distracted Environments](https://openreview.net/pdf/6972a2683764073195f725a7d18b19d8e88711da.pdf)
+  - Kaichen Huang, Shenghua Wan, Minghao Shao, Hai-Hang Sun, Le Gan, Shuai Feng, De-Chuan Zhan
+  - Key: Model-based Reinforcement Learning, Unsupervised Reinforcement Learning (URL), Visual Distractors, Bi-level Optimization
+  - ExpEnv: Locomotion Tasks, Manipulation Tasks
+  
+- [Effective Exploration Based on the Structural Information Principles](https://arxiv.org/abs/2410.06621)  
+  - Xianghua Zeng, Hao Peng, Angsheng Li  
+  - Key: Reinforcement Learning, Structural Information, Effective Exploration, Intrinsic Reward  
+  - ExpEnv: MiniGrid, MetaWorld, DeepMind Control Suite
+
+- [The Ladder in Chaos: Improving Policy Learning by Harnessing the Parameter Evolving Path in A Low-dimensional Space](https://openreview.net/pdf?id=3vHfwL2stG)
+  - Hongyao Tang, Min Zhang, Chen Chen, Jianye Hao
+  - Key: Reinforcement Learning, Policy Learning Dynamics, Temporal SVD, Low-dimensional Space
+  - ExpEnv: MuJoCo, DeepMind Control Suite (DMC), MinAtar
+
+- [Rethinking Exploration in Reinforcement Learning with Effective Metric-Based Exploration Bonus](https://openreview.net/pdf?id=QpKWFLtZKi)
+  - Yiming Wang, Kaiyan Zhao, Furui Liu, Leong Hou U
+  - Key: Reinforcement Learning, Exploration, Intrinsic Rewards, Metric-Based State Discrepancy
+  - ExpEnv: Atari, Minigrid, Robosuite, Habitat
+  - [code](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FYimingWangMingle%2FEME&sa=D&sntz=1&usg=AOvVaw3DKT8iecHBtgIeOzqUjoaH)
+
+- [Offline Oracle-Efficient Learning for Contextual MDPs via Layerwise Exploration-Exploitation Tradeoff](https://openreview.net/pdf?id=848vuK2cKp)  
+  - Jian Qian, Haichen Hu, David Simchi-Levi  
+  - Key: Contextual Markov Decision Processes (CMDPs), Offline Density Estimation, Layerwise Exploration-Exploitation Tradeoff  
+  - ExpEnv: Reward-Free Reinforcement Learning
+
 </details>
 
 
