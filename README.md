@@ -184,6 +184,11 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [Q-Star Meets Scalable Posterior Sampling: Bridging Theory and Practice via HyperAgent](https://proceedings.mlr.press/v235/li24by.html)
+  - Yingru Li, Jiawei Xu, Lei Han, Zhi-Quan Luo
+  - Key: ensembles, Thompson sampling, scalable exploration, regret analysis, complexity theory
+  - ExpEnv: Atari, DeepSea
+
 - [ACE: Off-Policy Actor-Critic with Causality-Aware Entropy Regularization](https://openreview.net/pdf?id=OwtMhMSybu)
   - Tianying Ji, Yongyuan Liang, Yan Zeng, Yu Luo, Guowei Xu, Jiawei Guo, Ruijie Zheng, Furong Huang, Fuchun Sun, Huazhe Xu
   - Key: Off-policy Actor-critic with Causality-aware Entropy regularization, exploration, causality-aware entropy regularization
