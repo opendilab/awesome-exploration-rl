@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2025.01.08`
+`Updated on 2025.02.06`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -21,7 +21,8 @@ in order to learn the skills required to achieve the goal.
 
 - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
 - [Papers](#papers)
-  - [NeurIPS 2024🔥](#neurips-2024)
+  - [ICLR 2025🔥](#iclr-2025)
+  - [NeurIPS 2024](#neurips-2024)
   - [ICML 2024](#icml-2024)
   - [ICLR 2024](#iclr-2024)
   - [NeurIPS 2023](#neurips-2023)
@@ -109,6 +110,62 @@ format:
   - ExpEnv: experiment environments
 ```
 
+### ICLR 2025
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [Brain Bandit: A Biologically Grounded Neural Network for Efficient Control of Exploration](https://openreview.net/forum?id=RWJX5F5I9g)  
+  - Chen Jiang, Jiahui An, Yating Liu, Ni Ji  
+  - Key: explore-exploit, stochastic Hopfield network, Thompson sampling, decision under uncertainty, brain-inspired algorithm, reinforcement learning  
+  - ExpEnv: multi-armed bandit (MAB) tasks, MDP tasks
+
+- [TOP-ERL: Transformer-based Off-Policy Episodic Reinforcement Learning](https://openreview.net/forum?id=N4NhVN30ph)  
+  - Ge Li, Dong Tian, Hongyi Zhou, Xinkai Jiang, Rudolf Lioutikov, Gerhard Neumann  
+  - Key: Value of sequences of actions, Reinforcement Learning, Transformer, Robot Manipulation, Movement Primitives  
+  - ExpEnv: Robot Learning Environments
+
+- [Efficient Exploration and Discriminative World Model Learning with an Object-Centric Abstraction](https://openreview.net/forum?id=hgwGi81ndj)  
+  - Anthony GX-Chen, Kenneth Marino, Rob Fergus  
+  - Key: reinforcement learning, model based reinforcement learning, world model, exploration, hierarchy  
+  - ExpEnv: 2D crafting, MiniHack environments
+
+- [MaxInfoRL: Boosting exploration in reinforcement learning through information gain maximization](https://openreview.net/forum?id=R4q3cY3kQf)  
+  - Bhavya Sukhija, Stelian Coros, Andreas Krause, Pieter Abbeel, Carmelo Sferrazza  
+  - Key: Reinforcement learning, Exploration in off-policy methods, Continuous control  
+  - ExpEnv: Continuous and visual control tasks
+
+- [ActSafe: Active Exploration with Safety Constraints for Reinforcement Learning](https://openreview.net/forum?id=aKRADWBJ1I)  
+  - Yarden As, Bhavya Sukhija, Lenart Treven, Carmelo Sferrazza, Stelian Coros, Andreas Krause  
+  - Key: Safe Exploration, Constrained Markov Decision Processes, Safe Reinforcement Learning  
+  - ExpEnv: Standard safe deep RL benchmarks
+
+- [A Single Goal is All You Need: Skills and Exploration Emerge from Contrastive RL without Rewards, Demonstrations, or Subgoals](https://openreview.net/forum?id=xCkgX4Xfu0)  
+  - Grace Liu, Michael Tang, Benjamin Eysenbach  
+  - Key: exploration, emergent skills, contrastive reinforcement learning, open-ended learning  
+  - ExpEnv: 2D maze navigation task
+
+- [Risk Informed Policy Learning for Safer Exploration](https://openreview.net/forum?id=gJG4IPwg6l)  
+  - Kaustubh Mani, Vincent Mai, Charlie Gauthier, Annie S Chen, Samer B. Nashed, Liam Paull  
+  - Key: Reinforcement Learning, Safe Exploration, Representation Learning, Inductive Bias  
+  - ExpEnv: AdroitHandPen, PointGoal1 and PointButton1
+
+- [Toward Efficient Multi-Agent Exploration With Trajectory Entropy Maximization](https://openreview.net/forum?id=YvKJGYL4j7)  
+  - Tianxu Li, Kun Zhu  
+  - Key: Multi-Agent Reinforcement Learning, Exploration, Cooperation, Trajectory Entropy Maximization  
+  - ExpEnv: Several MARL benchmarks
+  
+- [Beyond-Expert Performance with Limited Demonstrations: Efficient Imitation Learning with Double Exploration](https://openreview.net/forum?id=FviefuxmeW)  
+  - Heyang Zhao, Xingrui Yu, David Mark Bossens, Ivor Tsang, Quanquan Gu  
+  - Key: Reinforcement learning, imitation learning, Double Exploration
+  - ExpEnv: Atari, MuJoCo
+
+- [EgoSim: Egocentric Exploration in Virtual Worlds with Multi-modal Conditioning](https://openreview.net/forum?id=zAyS5aRKV8)  
+  - Wei Yu, Songheng Yin, Steve Easterbrook, Animesh Garg  
+  - Key: Controllable video generation, Egocentric video prediction, World model  
+  - ExpEnv: RealEstate, Epic-Field
+
+</details>
 
 ### NeurIPS 2024
 
