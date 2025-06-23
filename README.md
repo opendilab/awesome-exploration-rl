@@ -119,9 +119,9 @@ format:
 <summary>(Click to Collapse)</summary>
 
 - [Episodic Novelty Through Temporal Distance](https://openreview.net/forum?id=I7DeajDEx7)
-- Yuhua Jiang, Qihan Liu, Yiqin Yang, Xiaoteng Ma, Dianyu Zhong, Hao Hu, Jun Yang, Bin Liang, Bo XU, Chongjie Zhang, Qianchuan Zhao
-- Key: episodic novelty, temporal distance, exploration, reinforcement learning
-- ExpEnv: MiniGrid, MiniWorld, Craft, Maze, DMControl, etc.
+  - Yuhua Jiang, Qihan Liu, Yiqin Yang, Xiaoteng Ma, Dianyu Zhong, Hao Hu, Jun Yang, Bin Liang, Bo XU, Chongjie Zhang, Qianchuan Zhao
+  - Key: episodic novelty, temporal distance, exploration, reinforcement learning
+  - ExpEnv: MiniGrid, MiniWorld, Craft, Maze, DMControl, etc.
 
 - [Brain Bandit: A Biologically Grounded Neural Network for Efficient Control of Exploration](https://openreview.net/forum?id=RWJX5F5I9g)  
   - Chen Jiang, Jiahui An, Yating Liu, Ni Ji  
