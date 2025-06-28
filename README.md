@@ -180,6 +180,11 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [PEAC: Unsupervised Pre-training for Cross-Embodiment Reinforcement Learning](https://openreview.net/forum?id=LyAFfdx8YF)  
+  - Chengyang Ying, Zhongkai Hao, Xinning Zhou, Xuezhou Xu, Hang Su, Xingxing Zhang, Jun Zhu 
+  - Key: Cross-embodiment Reinforcement Learning, Unsupervised Exploration, Skill Discovery, Intrinsic Reward  
+  - ExpEnv: DeepMind Control Suite, Robosuite, Isaacgym, Real-world locomotion
+
 - [SeeA*: Efficient Exploration-Enhanced A* Search by Selective Sampling](https://openreview.net/forum?id=mSaqxZVZW8)  
   - Dengwei Zhao, Shikui Tu, Lei Xu  
   - Key: Enhances A* search by constructing a dynamic OPEN subset through selective sampling, enabling exploration of promising branches; theoretical and empirical efficiency improvements.  
