@@ -38,6 +38,21 @@ in order to learn the skills required to achieve the goal.
     - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
   - [Contributing](#contributing)
   - [License](#license)
+>>>>>>> origin/main
+    - [ICLR 2025](#iclr-2025)
+    - [NeurIPS 2024](#neurips-2024)
+    - [ICML 2024](#icml-2024)
+    - [ICLR 2024](#iclr-2024)
+    - [NeurIPS 2023](#neurips-2023)
+    - [ICML 2023](#icml-2023)
+    - [ICLR 2023](#iclr-2023)
+    - [NeurIPS 2022](#neurips-2022)
+    - [ICML 2022](#icml-2022)
+    - [ICLR 2022](#iclr-2022)
+    - [NeurIPS 2021](#neurips-2021)
+    - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 
 ## A Taxonomy of Exploration RL Methods
@@ -215,6 +230,11 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
+- [Episodic Novelty Through Temporal Distance](https://openreview.net/forum?id=I7DeajDEx7)
+  - Yuhua Jiang, Qihan Liu, Yiqin Yang, Xiaoteng Ma, Dianyu Zhong, Hao Hu, Jun Yang, Bin Liang, Bo XU, Chongjie Zhang, Qianchuan Zhao
+  - Key: episodic novelty, temporal distance, exploration, reinforcement learning
+  - ExpEnv: MiniGrid, MiniWorld, Craft, Maze, DMControl, etc.
+
 - [Brain Bandit: A Biologically Grounded Neural Network for Efficient Control of Exploration](https://openreview.net/forum?id=RWJX5F5I9g)  
   - Chen Jiang, Jiahui An, Yating Liu, Ni Ji  
   - Key: explore-exploit, stochastic Hopfield network, Thompson sampling, decision under uncertainty, brain-inspired algorithm, reinforcement learning  
@@ -271,6 +291,11 @@ format:
 
 <details open>
 <summary>(Click to Collapse)</summary>
+
+- [PEAC: Unsupervised Pre-training for Cross-Embodiment Reinforcement Learning](https://openreview.net/forum?id=LyAFfdx8YF)  
+  - Chengyang Ying, Zhongkai Hao, Xinning Zhou, Xuezhou Xu, Hang Su, Xingxing Zhang, Jun Zhu 
+  - Key: Cross-embodiment Reinforcement Learning, Unsupervised Exploration, Skill Discovery, Intrinsic Reward  
+  - ExpEnv: DeepMind Control Suite, Robosuite, Isaacgym, Real-world locomotion
 
 - [SeeA*: Efficient Exploration-Enhanced A* Search by Selective Sampling](https://openreview.net/forum?id=mSaqxZVZW8)  
   - Dengwei Zhao, Shikui Tu, Lei Xu  
