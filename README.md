@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2025.02.06`
+`Updated on 2025.09.12`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -19,21 +19,25 @@ in order to learn the skills required to achieve the goal.
 
 ## Table of Contents
 
-- [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
-- [Papers](#papers)
-  - [ICLR 2025🔥](#iclr-2025)
-  - [NeurIPS 2024](#neurips-2024)
-  - [ICML 2024](#icml-2024)
-  - [ICLR 2024](#iclr-2024)
-  - [NeurIPS 2023](#neurips-2023)
-  - [ICML 2023](#icml-2023)
-  - [ICLR 2023](#iclr-2023)
-  - [NeurIPS 2022](#neurips-2022)
-  - [ICML 2022](#icml-2022)
-  - [ICLR 2022](#iclr-2022)
-  - [NeurIPS 2021](#neurips-2021)
-  - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
-- [Contributing](#contributing)
+- [Awesome Exploration Methods in Reinforcement Learning](#awesome-exploration-methods-in-reinforcement-learning)
+  - [Table of Contents](#table-of-contents)
+  - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
+  - [Papers](#papers)
+    - [ICML 2025](#icml-2025)
+    - [ICLR 2025](#iclr-2025)
+    - [NeurIPS 2024](#neurips-2024)
+    - [ICML 2024](#icml-2024)
+    - [ICLR 2024](#iclr-2024)
+    - [NeurIPS 2023](#neurips-2023)
+    - [ICML 2023](#icml-2023)
+    - [ICLR 2023](#iclr-2023)
+    - [NeurIPS 2022](#neurips-2022)
+    - [ICML 2022](#icml-2022)
+    - [ICLR 2022](#iclr-2022)
+    - [NeurIPS 2021](#neurips-2021)
+    - [Classic Exploration RL Papers](#classic-exploration-rl-papers)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 
 ## A Taxonomy of Exploration RL Methods
@@ -109,6 +113,102 @@ format:
   - Key: key problems and insights
   - ExpEnv: experiment environments
 ```
+
+### ICML 2025
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [Controlling Underestimation Bias in Constrained Reinforcement Learning for Safe Exploration
+(https://openreview.net/forum?id=nq5bt0mRTC)
+  - Shiqing Gao, Jiaxin Ding, Luoyi Fu, Xinbing Wang
+  - Key: constrained RL, safe exploration, underestimation, intrinsic cost, Reinforcement Learning. 
+  - ExpEnv: safety-gymnasium, MuJoCo
+
+- [Training a Generally Curious Agent](https://openreview.net/forum?id=UeB3Hdrhda)
+  - Fahim Tajwar, Yiding Jiang, Abitha Thankaraj, Sumaita Sadia Rahman, J Zico Kolter, Jeff Schneider, Russ Salakhutdinov
+  - Key: LLM Agent, Synethic Data, Multiturn finetuning
+  - ExpEnv: Twenty questions, Guess my city, Wordle, Cellular automata, Customer service, Murder mystery, Mastermind, Battleship, Minesweeper, Bandit best arm selection
+  
+- [Monte Carlo Tree Diffusion for System 2 Planning](https://openreview.net/forum?id=XrCbBdycDc)
+  - Jaesik Yoon, Hyeonseo Cho, Doojin Baek, Yoshua Bengio, Sungjin Ahn
+  - Key: Diffusion, MCTS, Long-term Planning, Offline RL, Goal-conditioned RL, Inference-Time Scaling
+  - ExpEnv: PointMaze, AntMaze, Robot Arm Cube Manipulation, Visual PointMaze
+
+- [Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration](https://openreview.net/forum?id=4gWE7CMOlH)
+  - Qinglin Zhu, Runcong Zhao, Hanqi Yan, Yulan He, Yudong Chen, Lin Gui
+  - Key: Large Language Models, Reasoning, Embedding Perturbation, Bayesian Optimisation
+  - ExpEnv: None
+
+- [Hyper: Hyperparameter Robust Efficient Exploration in Reinforcement Learning](https://openreview.net/forum?id=n1CVVzBSjQ)
+  - Yiran Wang, Chenshu Liu, Yunfan Li, Sanae Amani, Bolei Zhou, Lin F. Yang
+  - Key: Reinforcement Learning, Exploration, Provably Efficient, Hyperparameter Robustness
+  - ExpEnv: PointMaze, MuJoCo, MiniGrid
+
+- [Provably Efficient Exploration in Inverse Constrained Reinforcement Learning](https://openreview.net/forum?id=eLTPkGGHum)
+  - Bo Yue, Jian Li, Guiliang Liu
+  - Key: Inverse Constrained Reinforcement Learning, Exploration Algorithm, Sample Efficiency
+  - ExpEnv: PointMaze, GridWorld
+
+- [Explicit Exploration for High-Welfare Equilibria in Game-Theoretic Multiagent Reinforcement Learning](https://openreview.net/forum?id=AxqgpcL90a)
+  - Austin A. Nguyen, Anri Gu, Michael P. Wellman
+  - Key: Empirical game theoretic analysis, equilibrium selection, game solving, strategy exploration
+  - ExpEnv: Harvest, Bargaining
+- 
+- [Maximum Entropy Reinforcement Learning with Diffusion Policy](https://openreview.net/forum?id=CpjKXe9rY7)
+  - Xiaoyi Dong, Jian Cheng, Xi Sheryl Zhang
+  - Key: Diffusion models, online reinforcement learning, maximum entropy reinforcement learning, soft actor-critic
+  - ExpEnv: Mujoco, AntMaze, DeepMind Control Suite
+
+- [Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning
+(https://openreview.net/forum?id=H76PMm7hf2)
+  - Lang Feng, Weihao Tan, Zhiyi Lyu, Longtao Zheng, Haiyang Xu, Ming Yan, Fei Huang, Bo An
+  - Key: vision-language model, agent, reinforcement learning, online fine-tuning, counterfactual
+  - ExpEnv: Android-in-the-Wild, Gym Cards, ALFWorld
+
+- [DIME: Diffusion-Based Maximum Entropy Reinforcement Learning](https://openreview.net/forum?id=Aw6dBR7Vxj)
+  - Onur Celik, Zechu Li, Denis Blessing, Ge Li, Daniel Palenicek, Jan Peters, Georgia Chalvatzaki, Gerhard Neumann
+  - Key: Reinforcement Learning, Diffusion Models, Diffusion Based Reinforcement Learning, Maximum Entropy Reinforcement Learning
+  - ExpEnv: Mujoco, DeepMind Control Suite, Myo Suite
+
+- [Knowledge Retention in Continual Model-Based Reinforcement Learning](https://openreview.net/forum?id=DiqeZY27XK)
+  - Haotian Fu, Yixiang Sun, Michael Littman, George Konidaris
+  - Key: Deep Reinforcement learning, Model-based Reinforcement Learning, Continual Learning, World Models
+  - ExpEnv: MiniGrid, DeepMind Control Suite
+
+- [KEA: Keeping Exploration Alive by Proactively Coordinating Exploration Strategies](https://openreview.net/pdf?id=XIyrotmBSJ)
+  - Shih-Min Yang, Martin Magnusson, Johannes A. Stork, Todor Stoyanov
+  - Key: Reinforcement Learning, Novelty-based Exploration, Soft Actor-Critic, Sparse reward
+  - ExpEnv: 2D Navigation,  DeepMind Control Suite
+
+- [EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration](https://openreview.net/forum?id=ck7dvZFbRW)
+  - Allen Nie, Yi Su, Bo Chang, Jonathan Lee, Ed H. Chi, Quoc V Le, Minmin Chen
+  - Key: Exploration, In-Context Reinforcement Learning, Bandit
+  - ExpEnv:  Multi-Armed Bandit, Contextual Bandits
+
+- [Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation]
+(https://openreview.net/forum?id=YqtgKdW9dD)
+  - Haozhe Ma, Fangling Li, Jing Yu Lim, Zhengding Luo, Thanh Vinh Vo, Tze-Yun Leong
+  - Key: Reinforcement Learning, Reward Shaping, Exploration-Exploitation Balance
+  - ExpEnv: Atari, VizDoom, MiniWorld
+
+- [SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models](https://openreview.net/forum?id=ZDPNmihkMR)
+  - Cansu Sancaktar, Christian Gumbsch, Andrii Zadaianchuk, Pavel Kolev, Georg Martius
+  - Key: intrinsic motivation, exploration, foundation models, model-based RL
+  - ExpEnv: MiniHack, Robodesk, Pokémon Red
+  
+- [Behavioral Exploration: Learning to Explore via In-Context Adaptation](https://openreview.net/forum?id=tlLkY9E2bZ)
+- Andrew Wagenmaker, Zhiyuan Zhou, Sergey Levine
+  - Key: in-context learning, exploration, adaptive agents, behavior cloning
+  - ExpEnv: D4RL AntMaze, D4RL Kitchen
+
+- [Leveraging Skills from Unlabeled Prior Data for Efficient Online Exploration](https://openreview.net/forum?id=perpuTFEF7)
+  - Max Wilcoxson, Qiyang Li, Kevin Frans, Sergey Levine
+  - Key: Offline-to-online RL, Unsupervised Pre-training, Exploration
+  - ExpEnv: D4RL, OGBench, Visual-AntMaze
+  
+  
+</details>
 
 ### ICLR 2025
 
