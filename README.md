@@ -119,8 +119,7 @@ format:
 <details open>
 <summary>(Click to Collapse)</summary>
 
-- [Controlling Underestimation Bias in Constrained Reinforcement Learning for Safe Exploration
-(https://openreview.net/forum?id=nq5bt0mRTC)
+- [Controlling Underestimation Bias in Constrained Reinforcement Learning for Safe Exploration](https://openreview.net/forum?id=nq5bt0mRTC)
   - Shiqing Gao, Jiaxin Ding, Luoyi Fu, Xinbing Wang
   - Key: constrained RL, safe exploration, underestimation, intrinsic cost, Reinforcement Learning. 
   - ExpEnv: safety-gymnasium, MuJoCo
@@ -154,14 +153,13 @@ format:
   - Austin A. Nguyen, Anri Gu, Michael P. Wellman
   - Key: Empirical game theoretic analysis, equilibrium selection, game solving, strategy exploration
   - ExpEnv: Harvest, Bargaining
-- 
+  
 - [Maximum Entropy Reinforcement Learning with Diffusion Policy](https://openreview.net/forum?id=CpjKXe9rY7)
   - Xiaoyi Dong, Jian Cheng, Xi Sheryl Zhang
   - Key: Diffusion models, online reinforcement learning, maximum entropy reinforcement learning, soft actor-critic
   - ExpEnv: Mujoco, AntMaze, DeepMind Control Suite
 
-- [Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning
-(https://openreview.net/forum?id=H76PMm7hf2)
+- [Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning](https://openreview.net/forum?id=H76PMm7hf2)
   - Lang Feng, Weihao Tan, Zhiyi Lyu, Longtao Zheng, Haiyang Xu, Ming Yan, Fei Huang, Bo An
   - Key: vision-language model, agent, reinforcement learning, online fine-tuning, counterfactual
   - ExpEnv: Android-in-the-Wild, Gym Cards, ALFWorld
@@ -186,8 +184,7 @@ format:
   - Key: Exploration, In-Context Reinforcement Learning, Bandit
   - ExpEnv:  Multi-Armed Bandit, Contextual Bandits
 
-- [Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation]
-(https://openreview.net/forum?id=YqtgKdW9dD)
+- [Catching Two Birds with One Stone: Reward Shaping with Dual Random Networks for Balancing Exploration and Exploitation](https://openreview.net/forum?id=YqtgKdW9dD)
   - Haozhe Ma, Fangling Li, Jing Yu Lim, Zhengding Luo, Thanh Vinh Vo, Tze-Yun Leong
   - Key: Reinforcement Learning, Reward Shaping, Exploration-Exploitation Balance
   - ExpEnv: Atari, VizDoom, MiniWorld
@@ -198,7 +195,7 @@ format:
   - ExpEnv: MiniHack, Robodesk, Pokémon Red
   
 - [Behavioral Exploration: Learning to Explore via In-Context Adaptation](https://openreview.net/forum?id=tlLkY9E2bZ)
-- Andrew Wagenmaker, Zhiyuan Zhou, Sergey Levine
+  - Andrew Wagenmaker, Zhiyuan Zhou, Sergey Levine
   - Key: in-context learning, exploration, adaptive agents, behavior cloning
   - ExpEnv: D4RL AntMaze, D4RL Kitchen
 
