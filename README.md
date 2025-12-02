@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2025.09.12`
+`Updated on 2025.12.02`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -23,6 +23,7 @@ in order to learn the skills required to achieve the goal.
   - [Table of Contents](#table-of-contents)
   - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
   - [Papers](#papers)
+    - [NeurIPS 2025](#neurips-2025)
     - [ICML 2025](#icml-2025)
     - [ICLR 2025](#iclr-2025)
     - [NeurIPS 2024](#neurips-2024)
@@ -113,6 +114,108 @@ format:
   - Key: key problems and insights
   - ExpEnv: experiment environments
 ```
+### NeurIPS 2025
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [State Entropy Regularization for Robust Reinforcement Learning](https://openreview.net/forum?id=rtG7n93Ru8)
+  - Yonatan Ashlag, Uri Koren, Mirco Mutti, Esther Derman, Pierre-Luc Bacon, Shie Mannor
+  - Key: Robust Reinforcement Learning, Risk-Averse Reinforcement Learning, Regularized Reinforcement Learning
+  - ExpEnv: MiniGrid, MuJoCo
+
+- [Geometry Meets Incentives: Sample-Efficient Incentivized Exploration with Linear Contexts](https://openreview.net/forum?id=nwlX15Wnr9)
+  - Benjamin Schiffer, Mark Sellke
+  - Key: Multi-armed bandits, Bayesian Incentive Compatible, Exploration
+  - ExpEnv: Multi-Armed Bandit
+
+- [LLM-Explorer: A Plug-in Reinforcement Learning Policy Exploration Enhancement Driven by Large Language Models](https://openreview.net/forum?id=VA5P0rUZPx)
+  - Qianyue Hao, Yiwen Song, Qingmin Liao, Jian Yuan, Yong Li
+  - Key: Reinforcement learning, large language model, policy exploration
+  - ExpEnv: Atari, MuJoCo
+
+- [Exploration via Feature Perturbation in Contextual Bandits](https://openreview.net/forum?id=gAddPMjmUc)
+  - Seouh-won Yi, Min-hwan Oh
+  - Key:  Generalized Linear Bandits, Contextual Bandits, Thompson Sampling, Feature Perturbation
+  - ExpEnv: Synthetic Data, UCI Datasets, MNIST
+  
+- [REINFORCE Converges to Optimal Policies with Any Learning Rate](https://openreview.net/forum?id=YzriuQGaNX)
+  - Samuel McLaughlin Robertson, Thang D. Chu, Bo Dai, Dale Schuurmans, Csaba Szepesvari, Jincheng Mei
+  - Key: Reinforcement learning, Policy gradient, Convergence, Bandits
+  - ExpEnv: Multi-armed Bandits, ChainMDP, DeepSea, CartPole
+
+- [Asymmetric REINFORCE for off-Policy Reinforcement Learning: Balancing positive and negative rewards](https://openreview.net/forum?id=Ql3sENn0mi)
+  - Charles Arnal, Gaëtan Narozniak, Vivien Cabannes, Yunhao Tang, Julia Kempe, Remi Munos
+  - Key: reinforcement learning, off-policy RL, LLM finetuning, bandits
+  - ExpEnv: Stochastic Bandits, MATH dataset  
+
+- [Off-policy Reinforcement Learning with Model-based Exploration Augmentation](http://openreview.net/forum?id=JGkZgEEjiM)
+  - Likun Wang, Xiangteng Zhang, Yinuo Wang, Guojian Zhan, Wenxuan Wang, Haoyu Gao, Jingliang Duan, Shengbo Eben Li
+  - Key: Model-based reinforcement learning, Model-based Exploration, Generative model, World model
+  - ExpEnv: OpenAI Gym, DMC
+
+- [Cognitive Predictive Processing: A Human-inspired Framework for Adaptive Exploration in Open-World Reinforcement Learning](https://openreview.net/forum?id=2fFRIIwau6)
+  - boheng liu, Ziyu Li, Chenghua Duan, YuTian Liu, Zhuo Wang, Xiuxing Li, Qing Li, Xia Wu
+  - Key: Open-World Reinforcement Learning, Human-inspired Artificial Intelligence, Cognitive Architectures
+  - ExpEnv:  MineDojo, Minecraft
+
+- [Novel Exploration via Orthogonality](https://openreview.net/forum?id=yJS1eZSNUv)
+  - Andreas Theophilou, Özgür Şimşek
+  - Key: Laplacian, Novelty, Reinforcement Learning, Exploration, Eigenvectors, Spectral Methods
+  - ExpEnv: GridWorld
+
+- [Infrequent Exploration in Linear Bandits](https://openreview.net/forum?id=STLolzI6q1)
+  - Harin Lee, Min-hwan Oh
+  - Key: linear bandits, greedy selection
+  - ExpEnv: Multi-Armed Bandit
+
+- [Deployment Efficient Reward-Free Exploration with Linear Function Approximation](https://openreview.net/forum?id=ByzRO25Bjr)
+  - Zihan Zhang, Yuxin Chen, Jason D. Lee, Simon Shaolei Du, Lin Yang, Ruosong Wang
+  - Key:  Reinforcement learning, linear MDP, deployment efficiency
+  - ExpEnv: None
+
+- [Wonder Wins Ways: Curiosity-Driven Exploration through Multi-Agent Contextual Calibration](https://openreview.net/forum?id=1fOGTbO5Sx)
+  - Yiyuan Pan, Zhe Liu, Hesheng Wang
+  - Key:   Multi-Agent Reinforcement Learning, Intrinsic Reward, Artificial Curiosity
+  - ExpEnv: VMAS, Meltingpot, SMACv2
+
+- [Scalable Exploration via Ensemble++](https://openreview.net/forum?id=M226WElHp5)
+  - Yingru Li, Jiawei Xu, Baoxiang Wang, Zhi-Quan Luo
+  - Key:  Reinforcement Learning, Ensemble Sampling, Thompson Sampling, Exploration, Posterior Approximation, Scalable Computation
+  - ExpEnv: linear bandits, quadratic bandits, neural bandits, GPT-based contextual bandits 
+
+- [Uncertainty-Guided Exploration for Efficient AlphaZero Training](https://openreview.net/forum?id=3q6lJTN45T)
+  - Scott Cheng, Meng-Yu Tsai, Ding-Yong Hong, Mahmut Kandemir
+  - Key:  AlphaZero, uncertainty, exploration
+  - ExpEnv: Go
+
+- [Exploration from a Primal-Dual Lens: Value-Incentivized Actor-Critic Methods for Sample-Efficient Online RL](https://openreview.net/forum?id=A5Y8Uh5Szl)
+  - Tong Yang, Bo Dai, Lin Xiao, Yuejie Chi
+  - Key:  exploration-exploitation trade-off, actor-critic, RL theory
+  - ExpEnv: MuJoCo
+  
+- [Reinforcement Learning with Action Chunking](https://openreview.net/forum?id=XUks1Y96NR)
+  - Qiyang Li, Zhiyuan Zhou, Sergey Levine
+  - Key:  reinforcement learning, offline-to-online RL, exploration
+  - ExpEnv: OGBench, robomimic
+
+- [DISCOVER: Automated Curricula for Sparse-Reward Reinforcement Learning](https://openreview.net/forum?id=guZBnsKPsw)
+  - Leander Diaz-Bone, Marco Bagatella, Jonas Hübotter, Andreas Krause
+  - Key: reinforcement learning, test-time training, test-time reinforcement learning, sparse-reward reinforcement learning, goal selection, goal-conditioned reinforcement learning, exploration, exploration-exploitation, upper confidence bound
+  - ExpEnv: antmaze, arm, pointmaze
+
+- [Meta-learning how to Share Credit among Macro-Actions](https://openreview.net/forum?id=cJlgdpEFx9)
+  - Ionel Hosu, Traian Rebedea, Razvan Pascanu
+  - Key: deep reinforcement learning, macro-actions, exploration
+  - ExpEnv: Atari, StreetFighter II
+
+- [ExPO: Unlocking Hard Reasoning with Self-Explanation-Guided Reinforcement Learning](https://openreview.net/forum?id=D1PeGJtVEu)
+  - Ruiyang Zhou, Shuozhe Li, Amy Zhang, Liu Leqi
+  - Key: Large Language Model, Self-improvement, Guided exploration, Reasoning, Reinforcement Learning with Verifiable Reward, Bootstrapping
+  - ExpEnv: MATH, GSM8K, MATH-500
+
+
+</details>
 
 ### ICML 2025
 
