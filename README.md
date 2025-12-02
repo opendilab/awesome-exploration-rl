@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2025.09.12`
+`Updated on 2025.12.02`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -23,6 +23,7 @@ in order to learn the skills required to achieve the goal.
   - [Table of Contents](#table-of-contents)
   - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
   - [Papers](#papers)
+    - [NeurIPS 2025](#neurips-2025)
     - [ICML 2025](#icml-2025)
     - [ICLR 2025](#iclr-2025)
     - [NeurIPS 2024](#neurips-2024)
