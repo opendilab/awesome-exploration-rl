@@ -136,7 +136,7 @@ format:
   - Key: rubrics, multi-domain RL, exploration, LLM reasoning
   - ExpEnv: LLM reasoning
 
-- [T²PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://openreview.net/forum?id=aD1zjvdJN4)
+- [T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://openreview.net/forum?id=aD1zjvdJN4)
   - Haixin Wang, Hejie Cui, Chenwei Zhang, Xin Liu, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout, Zhenyu Shi, Yizhou Sun
   - Key: multi-turn RL, agentic RL, uncertainty, LLM agents
   - ExpEnv: multi-turn LLM agents
@@ -182,12 +182,12 @@ format:
   - Key: empowerment, representation learning, unsupervised RL, skill learning
   - ExpEnv: unsupervised RL benchmarks
 
-- [Posterior Sampling Reinforcement Learning with Gaussian Processes for Continuous Control](https://openreview.net/forum?id=RKVsEuwbJ0)
+- [Posterior Sampling Reinforcement Learning with Gaussian Processes for Continuous Control: Sublinear Regret Bounds for Unbounded State Spaces](https://openreview.net/forum?id=RKVsEuwbJ0)
   - Hamish Flynn, Joe Watson, Ingmar Posner, Jan Peters
   - Key: posterior sampling, Gaussian processes, continuous control, regret bounds
   - ExpEnv: continuous control
 
-- [IEC: Information-Driven Exploration Meets Spectral Consensus via Primal-Dual Reward Regularization in Decentralized Multi-Agent RL](https://openreview.net/forum?id=FsKoSE1xq8)
+- [IEC: When Information-Driven Exploration Meets Spectral Consensus via Primal–Dual Reward Regularization in Decentralized Multi-Agent RL](https://openreview.net/forum?id=FsKoSE1xq8)
   - Jiajun Wu, Xuefeng Du, Yuduo Zheng, Fengqi Li
   - Key: multi-agent RL, intrinsic reward, decentralized, spectral consensus
   - ExpEnv: decentralized MARL benchmarks
