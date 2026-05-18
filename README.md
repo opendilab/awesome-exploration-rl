@@ -2,7 +2,7 @@
 
 # Awesome Exploration Methods in Reinforcement Learning 
 
-`Updated on 2025.12.02`
+`Updated on 2026.05.18`
 
 - Here is a collection of research papers for **Exploration methods in Reinforcement Learning (ERL)**.
 The repository will be continuously updated to track the frontier of ERL. Welcome to follow and star!
@@ -23,6 +23,8 @@ in order to learn the skills required to achieve the goal.
   - [Table of Contents](#table-of-contents)
   - [A Taxonomy of Exploration RL Methods](#a-taxonomy-of-exploration-rl-methods)
   - [Papers](#papers)
+    - [ICML 2026](#icml-2026)
+    - [ICLR 2026](#iclr-2026)
     - [NeurIPS 2025](#neurips-2025)
     - [ICML 2025](#icml-2025)
     - [ICLR 2025](#iclr-2025)
@@ -114,6 +116,233 @@ format:
   - Key: key problems and insights
   - ExpEnv: experiment environments
 ```
+### ICML 2026
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [Joint-Space Empowerment as a Theory of Dexterous Motor Coordination](https://openreview.net/forum?id=qI2eHwfNfh)
+  - James Heald, Vittorio Caggiano, Vikash Kumar, Maneesh Sahani
+  - Key: empowerment, intrinsic motivation, musculoskeletal control, policy search
+  - ExpEnv: musculoskeletal control
+
+- [NonZero: Interaction-Guided Exploration for Multi-Agent Monte Carlo Tree Search](https://openreview.net/forum?id=Jh6gq9QsFa)
+  - Sizhe Tang, Zuyuan Zhang, Mahdi Imani, Tian Lan
+  - Key: multi-agent MCTS, joint actions, exploration, cooperative
+  - ExpEnv: SMAC, multi-agent
+
+- [Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://openreview.net/forum?id=AfqsNFzJcs)
+  - Baolong Bi, Shenghua Liu, Yiwei Wang, Siqian Tong, Lingrui Mei, Yuyao Ge, Yilong Xu, Jiafeng Guo, Xueqi Cheng
+  - Key: rubrics, multi-domain RL, exploration, LLM reasoning
+  - ExpEnv: LLM reasoning
+
+- [T²PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://openreview.net/forum?id=aD1zjvdJN4)
+  - Haixin Wang, Hejie Cui, Chenwei Zhang, Xin Liu, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout, Zhenyu Shi, Yizhou Sun
+  - Key: multi-turn RL, agentic RL, uncertainty, LLM agents
+  - ExpEnv: multi-turn LLM agents
+
+- [Covariance Volume Maximization for Embodied Latent Exploration in Deep Reinforcement Learning](https://openreview.net/forum?id=nfxxgHgWiL)
+  - Yiming Wang, Yiheng Zhang, Kaiyan Zhao, Xingjie Zuo, Xingyu Liu, Xuetao Li, Furui Liu, Bo An, Leong Hou U
+  - Key: latent exploration, intrinsic motivation, embodied agents, deep RL
+  - ExpEnv: embodied RL benchmarks
+
+- [Improved Bounds for Reward-Agnostic and Reward-Free Exploration](https://openreview.net/forum?id=dmTyOwKAmZ)
+  - Oran Ridel, Alon Peled-Cohen
+  - Key: reward-free exploration, PAC bounds, tabular MDPs, theory
+
+- [Variance Driven Exploration: A Provable and Efficient Methodology for Pure Exploration in Highly Stochastic Environments](https://openreview.net/forum?id=34cmbsgpT5)
+  - Khang Luong, Nam Nguyen, Hoang Ta, Hung Tran-The, Tuan Dam
+  - Key: pure exploration, variance reduction, stochastic bandits, best-arm identification
+
+- [Near-Minimax Multi-Objective RL under Predictable Adversarial Preferences and Preference-Free Exploration in Linear MDPs](https://openreview.net/forum?id=4X1XzWFZE3)
+  - Mingxi Hu, Meiling Yu
+  - Key: multi-objective RL, preference-free exploration, linear MDPs, regret bounds
+
+- [Task-Aware Exploration via a Predictive Bisimulation Metric](https://openreview.net/forum?id=EyxlSrJWT5)
+  - Dayang Liang, Ruihan Liu, Lipeng Wan, Yunlong Liu, Bo An
+  - Key: task-aware exploration, bisimulation metric, visual RL, sparse rewards
+  - ExpEnv: MetaWorld
+
+- [Emergence of Exploration in Policy Gradient Reinforcement Learning via Retrying](https://openreview.net/forum?id=NpvBAOc87E)
+  - Soichiro Nishimori, Paavo Parmas, Sotetsu Koyamada, Tadashi Kozuno, Toshinori Kitamura, Shin Ishii, Yutaka Matsuo
+  - Key: policy gradient, exploration theory, ReMax, retry
+
+- [Episodic Memory-Guided Controllable Experience Synthesis for Reinforcement Learning](https://openreview.net/forum?id=mjYcL7esQO)
+  - Xiao Ma, Tian Li, Wu-Jun Li
+  - Key: episodic memory, data augmentation, diffusion, experience replay
+  - ExpEnv: continuous control
+
+- [Unsupervised Hierarchical Skill Discovery](https://openreview.net/forum?id=Wrywrky3Fk)
+  - Damion Harvey, Steven James, Benjamin Rosman, Branden Ingram, Geraud Nangue Tasse
+  - Key: skill discovery, unsupervised RL, hierarchical RL, options
+  - ExpEnv: MineDojo
+
+- [Learning to Perceive the World Through Control: Empowerment-Based Representation Learning](https://openreview.net/forum?id=ZAZb1ZGnFH)
+  - Mahsa Bastankhah, Sophie Broderick, Benjamin Eysenbach
+  - Key: empowerment, representation learning, unsupervised RL, skill learning
+  - ExpEnv: unsupervised RL benchmarks
+
+- [Posterior Sampling Reinforcement Learning with Gaussian Processes for Continuous Control](https://openreview.net/forum?id=RKVsEuwbJ0)
+  - Hamish Flynn, Joe Watson, Ingmar Posner, Jan Peters
+  - Key: posterior sampling, Gaussian processes, continuous control, regret bounds
+  - ExpEnv: continuous control
+
+- [IEC: Information-Driven Exploration Meets Spectral Consensus via Primal-Dual Reward Regularization in Decentralized Multi-Agent RL](https://openreview.net/forum?id=FsKoSE1xq8)
+  - Jiajun Wu, Xuefeng Du, Yuduo Zheng, Fengqi Li
+  - Key: multi-agent RL, intrinsic reward, decentralized, spectral consensus
+  - ExpEnv: decentralized MARL benchmarks
+
+- [OCNR: Stabilizing Self-Play by Mitigating Iteration-Collapse With One-Class Novelty Rewards](https://openreview.net/forum?id=70lhVsTZ62)
+  - Seungyoo Lee, Giung Nam, Hyungi Lee, Juho Lee
+  - Key: self-play, novelty reward, iteration collapse, LLM RL
+  - ExpEnv: self-play LLM RL
+
+- [Uncertainty-Guided Exploration and Stable Planning for Sparse-Reward Manipulation from Limited Demonstrations](https://openreview.net/forum?id=J5IGUfqsIL)
+  - Haowen Sun, Liqi Huang, Mingyang Li, Sihua Ren, Xinzhe Chen, Chengzhong Ma, Zeyang Liu, Xingyu Chen, Xuguang Lan
+  - Key: uncertainty exploration, RL from demonstrations, manipulation, world model
+  - ExpEnv: robotic manipulation, sparse rewards
+
+- [Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://openreview.net/forum?id=IM8ZHjhD0v)
+  - Yang Zhou, Sunzhu Li, Shunyu Liu, Wenkai Fang, Kongcheng Zhang, Jiale Zhao, Jingwen Yang, Yihe Zhou, Jianwei Lv, Tongya Zheng, Hengtong Lu, Chen Wei, Xie Yan, Mingli Song
+  - Key: rubric reward, exploration, LLM reasoning, RLVR
+  - ExpEnv: LLM reasoning benchmarks
+
+- [BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://openreview.net/forum?id=KmS7pdFBEh)
+  - Jian Hu, Mingjie Liu, Ximing Lu, Fang Wu, Zaid Harchaoui, Shizhe Diao, Yejin Choi, Pavlo Molchanov, Jun Yang, Jan Kautz, Yi Dong
+  - Key: RLVR scaling, broad exploration, rollouts, LLM RL
+  - ExpEnv: LLM reasoning benchmarks
+
+- [Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models](https://openreview.net/forum?id=2jXDMGaNZk)
+  - Wenhui Tan, Fiorenzo Parascandolo, Enver Sangineto, Jianzhong Ju, Zhenbo Luo, Qian Cao, Rita Cucchiara, Ruihua Song, Jian Luan
+  - Key: latent exploration, post-training, decoding, reasoning models
+  - ExpEnv: LLM reasoning benchmarks
+
+- [Estimating the Empowerment of Language Model Agents](https://openreview.net/forum?id=r8qbhgGHnC)
+  - Jinyeop Song, Jeff Gore, Max Kleiman-Weiner
+  - Key: empowerment, LLM agents, evaluation, information-theoretic
+  - ExpEnv: LLM agent benchmarks
+
+- [Exploration Hacking: LLMs Can Learn to Resist RL Training](https://openreview.net/forum?id=L0EGKqOBpz)
+  - Eyon Jang, Damon Falck, Joschka Cedric Braun, Nathalie Kirch, Achyutha Menon, Perusha Moodley, Scott Emmons, Roland S. Zimmermann, David Lindner
+  - Key: LLM RL, exploration hacking, safety, alignment
+  - ExpEnv: LLM RL post-training
+
+</details>
+
+### ICLR 2026
+
+<details open>
+<summary>(Click to Collapse)</summary>
+
+- [Exploratory Diffusion Model for Unsupervised Reinforcement Learning](https://openreview.net/forum?id=k0Kb1ynFbt)
+  - Chengyang Ying, Huayu Chen, Xinning Zhou, Zhongkai Hao, Hang Su, Jun Zhu
+  - Key: unsupervised RL, intrinsic reward, score-based exploration, diffusion policy, density estimation
+  - ExpEnv: URLB
+
+- [Non-Asymptotic Analysis of (Sticky) Track-and-Stop](https://openreview.net/forum?id=vebqP5aioj)
+  - Riccardo Poiani, Martino Bernasconi, Andrea Celli
+  - Key: pure exploration, multi-armed bandit theory, fixed-confidence, Track-and-Stop, sample complexity
+
+- [Discount Model Search for Quality Diversity Optimization in High-Dimensional Measure Spaces](https://openreview.net/forum?id=m6Hv0yZO3n)
+  - Bryon Tjanaka, Henry Chen, Matthew Christopher Fontaine, Stefanos Nikolaidis
+  - Key: quality-diversity, exploration, CMA-MAE, behavior descriptors, high-dimensional measure spaces
+  - ExpEnv: quality-diversity benchmarks
+
+- [Universal Value-Function Uncertainties](https://openreview.net/forum?id=NeAzH9u2jh)
+  - Moritz Akiya Zanger, Max Weltevrede, Yaniv Oren, Pascal R. Van der Vaart, Caroline Horsch, Wendelin Boehmer, Matthijs T. J. Spaan
+  - Key: epistemic uncertainty, value-function uncertainty, RND-style exploration, offline RL, multi-task RL
+  - ExpEnv: multi-task RL, offline RL benchmarks
+
+- [Spectral Bellman Method: Unifying Representation and Exploration in RL](https://openreview.net/forum?id=tHmiydOQhn)
+  - Ofir Nabati, Bo Dai, Shie Mannor, Guy Tennenholtz
+  - Key: representation learning, Inherent Bellman Error, exploration, value-based RL, hard exploration
+  - ExpEnv: hard-exploration RL benchmarks
+
+- [EUBRL: Epistemic Uncertainty Directed Bayesian Reinforcement Learning](https://openreview.net/forum?id=KASqlcI6Nm)
+  - Jianfei Ma, Wee Sun Lee
+  - Key: Bayesian RL, epistemic uncertainty, principled exploration, regret bound
+  - ExpEnv: sparse-reward long-horizon stochastic MDPs
+
+- [Q-learning with Posterior Sampling](https://openreview.net/forum?id=a4z7OlgSxC)
+  - Priyank Agrawal, Shipra Agrawal, Azmat Azati
+  - Key: posterior sampling, Thompson sampling, Q-learning, tabular RL, regret analysis
+
+- [Graph-Theoretic Intrinsic Reward: Guiding RL with Effective Resistance](https://openreview.net/forum?id=W8bKDPf1Ko)
+  - Jatin Chauhan, Shivam Bhardwaj, Aditya Saibewar, Aditya Ramesh, Sadbhavana Babar, Manohar Kaul
+  - Key: intrinsic motivation, effective resistance, spectral graph theory, sparse-reward RL, goal-conditioned RL
+  - ExpEnv: sparse-reward goal-conditioned environments
+
+- [Temporal Representations for Exploration: Learning Complex Exploratory Behavior without Extrinsic Rewards](https://openreview.net/forum?id=KjYpHySlb0)
+  - Faisal Mohamed, Catherine Ji, Benjamin Eysenbach, Glen Berseth
+  - Key: intrinsic motivation, temporal contrastive representation, surprise, empowerment, unsupervised RL
+  - ExpEnv: locomotion, manipulation, embodied navigation
+
+- [Demystifying The Mechanisms Behind Emergent Exploration in Goal-Conditioned RL](https://openreview.net/forum?id=mwgYORsqtv)
+  - Mahsa Bastankhah, Grace Liu, Dilip Arumugam, Thomas L. Griffiths, Benjamin Eysenbach
+  - Key: goal-conditioned RL, contrastive RL, emergent exploration, cognitive interpretability, implicit rewards
+  - ExpEnv: Single-Goal Contrastive RL benchmarks
+
+- [Polychromic Objectives for Reinforcement Learning](https://openreview.net/forum?id=zzTQISAGUp)
+  - Jubayer Ibn Hamid, Ifdita Hasan Orney, Ellen Xu, Chelsea Finn, Dorsa Sadigh
+  - Key: policy gradient, exploration, diverse generations, PPO, RL fine-tuning
+  - ExpEnv: RL fine-tuning tasks
+
+- [Value Flows](https://openreview.net/forum?id=2VyNYUVF2k)
+  - Perry Dong, Chongyi Zheng, Chelsea Finn, Dorsa Sadigh, Benjamin Eysenbach
+  - Key: distributional RL, return distribution, flow matching, exploration, safe RL
+  - ExpEnv: continuous control
+
+- [Skill Learning via Policy Diversity Yields Identifiable Representations for Reinforcement Learning](https://openreview.net/forum?id=xsPWWSod4M)
+  - Patrik Reizinger, Bálint Mucsányi, Siyuan Guo, Benjamin Eysenbach, Bernhard Schölkopf, Wieland Brendel
+  - Key: unsupervised skill discovery, mutual information, exploration, identifiability, contrastive successor features
+  - ExpEnv: unsupervised RL skill-discovery benchmarks
+
+- [Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems](https://openreview.net/forum?id=bH5uHIVtTe)
+  - Minsoo Kim, Seung-won Hwang
+  - Key: hard-exploration, text-based games, world memory, LLM agents, advantage reflection
+  - ExpEnv: Jericho
+
+- [SHAPO: Sharpness-Aware Policy Optimization for Safe Exploration](https://openreview.net/forum?id=7cUxi8LbKD)
+  - Kaustubh Mani, Yann Pequignot, Vincent Mai, Liam Paull
+  - Key: safe exploration, sharpness-aware optimization, epistemic uncertainty, constrained RL
+  - ExpEnv: Safe RL benchmarks
+
+- [Safe Exploration via Policy Priors](https://openreview.net/forum?id=JC8xYAADHL)
+  - Manuel Wendl, Yarden As, Manish Prajapat, Anton Pollak, Stelian Coros, Andreas Krause
+  - Key: safe exploration, constrained MDP, policy priors, probabilistic dynamics
+  - ExpEnv: Safe RL benchmarks, real-world hardware
+
+- [Is Pure Exploitation Sufficient in Exogenous MDPs with Linear Function Approximation?](https://openreview.net/forum?id=l8YvuTQ0FA)
+  - Hao Liang, Jiayu Cheng, Sean R. Sinclair, Yali Du
+  - Key: exogenous MDPs, exploration-free RL, regret bounds, linear function approximation
+
+- [Retaining Suboptimal Actions to Follow Shifting Optima in Multi-Agent Reinforcement Learning](https://openreview.net/forum?id=Tcw42NlBdw)
+  - Yonghyeon Jo, Sunwoo Lee, Seungyul Han
+  - Key: multi-agent RL, value decomposition, exploration, softmax behavior policy, sub-value Q-learning
+  - ExpEnv: SMAC
+
+- [In-Context Learning for Pure Exploration](https://openreview.net/forum?id=NFCNFvDYfE)
+  - Alessio Russo, Ryan Welch, Aldo Pacchiano
+  - Key: pure exploration, active sequential hypothesis testing, in-context learning, best-arm identification
+  - ExpEnv: best-arm identification, generalized search benchmarks
+
+- [Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://openreview.net/forum?id=9xIBbfItGP)
+  - Xuan Zhang, Ruixiao Li, Zhijian Zhou, Long Li, Yulei Qin, Ke Li, Xing Sun, Xiaoyu Tan, Chao Qu, Yuan Qi
+  - Key: count-based exploration, intrinsic reward, RLVR, Coin Flipping Network, LLM reasoning
+  - ExpEnv: math reasoning benchmarks
+
+- [Thompson Sampling via Fine-Tuning of LLMs](https://openreview.net/forum?id=u6fc354gfS)
+  - Nicolas Menet, Aleksandar Terzic, Michael Hersche, Andreas Krause, Abbas Rahimi
+  - Key: Thompson sampling, Bayesian optimization, LLM fine-tuning, posterior sampling, regret bound
+  - ExpEnv: discrete Bayesian optimization benchmarks
+
+- [Toward Efficient Exploration by Large Language Model Agents](https://openreview.net/forum?id=M3vwnscpL2)
+  - Dilip Arumugam, Thomas L. Griffiths
+  - Key: exploration, posterior sampling for RL, LLM agents, Bayesian RL
+  - ExpEnv: bandit, RL tasks for LLM agents
+
+</details>
+
 ### NeurIPS 2025
 
 <details open>
