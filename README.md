@@ -126,17 +126,17 @@ format:
   - Key: empowerment, intrinsic motivation, musculoskeletal control, policy search
   - ExpEnv: musculoskeletal control
 
-- [NonZero: Interaction-Guided Exploration for Multi-Agent Monte Carlo Tree Search](https://arxiv.org/pdf/2605.00751v1)
+- [NonZero: Interaction-Guided Exploration for Multi-Agent Monte Carlo Tree Search](https://arxiv.org/abs/2605.00751)
   - Sizhe Tang, Zuyuan Zhang, Mahdi Imani, Tian Lan
   - Key: multi-agent MCTS, joint actions, exploration, cooperative
   - ExpEnv: SMAC, multi-agent
 
-- [Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://arxiv.org/pdf/2511.12344v2)
+- [Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://arxiv.org/abs/2511.12344)
   - Baolong Bi, Shenghua Liu, Yiwei Wang, Siqian Tong, Lingrui Mei, Yuyao Ge, Yilong Xu, Jiafeng Guo, Xueqi Cheng
   - Key: rubrics, multi-domain RL, exploration, LLM reasoning
   - ExpEnv: LLM reasoning
 
-- [T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://arxiv.org/pdf/2605.02178v1)
+- [T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://arxiv.org/abs/2605.02178)
   - Haixin Wang, Hejie Cui, Chenwei Zhang, Xin Liu, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout, Zhenyu Shi, Yizhou Sun
   - Key: multi-turn RL, agentic RL, uncertainty, LLM agents
   - ExpEnv: multi-turn LLM agents
@@ -146,7 +146,7 @@ format:
   - Key: latent exploration, intrinsic motivation, embodied agents, deep RL
   - ExpEnv: embodied RL benchmarks
 
-- [Improved Bounds for Reward-Agnostic and Reward-Free Exploration](https://arxiv.org/pdf/2602.16363v2)
+- [Improved Bounds for Reward-Agnostic and Reward-Free Exploration](https://arxiv.org/abs/2602.16363)
   - Oran Ridel, Alon Peled-Cohen
   - Key: reward-free exploration, PAC bounds, tabular MDPs, theory
 
@@ -158,7 +158,7 @@ format:
   - Mingxi Hu, Meiling Yu
   - Key: multi-objective RL, preference-free exploration, linear MDPs, regret bounds
 
-- [Task-Aware Exploration via a Predictive Bisimulation Metric](https://arxiv.org/pdf/2602.18724v1)
+- [Task-Aware Exploration via a Predictive Bisimulation Metric](https://arxiv.org/abs/2602.18724)
   - Dayang Liang, Ruihan Liu, Lipeng Wan, Yunlong Liu, Bo An
   - Key: task-aware exploration, bisimulation metric, visual RL, sparse rewards
   - ExpEnv: MetaWorld
@@ -172,7 +172,7 @@ format:
   - Key: episodic memory, data augmentation, diffusion, experience replay
   - ExpEnv: continuous control
 
-- [Unsupervised Hierarchical Skill Discovery](https://arxiv.org/pdf/2601.23156v1)
+- [Unsupervised Hierarchical Skill Discovery](https://arxiv.org/abs/2601.23156)
   - Damion Harvey, Steven James, Benjamin Rosman, Branden Ingram, Geraud Nangue Tasse
   - Key: skill discovery, unsupervised RL, hierarchical RL, options
   - ExpEnv: MineDojo
@@ -182,7 +182,7 @@ format:
   - Key: empowerment, representation learning, unsupervised RL, skill learning
   - ExpEnv: unsupervised RL benchmarks
 
-- [Posterior Sampling Reinforcement Learning with Gaussian Processes for Continuous Control: Sublinear Regret Bounds for Unbounded State Spaces](https://arxiv.org/pdf/2603.08287v1)
+- [Posterior Sampling Reinforcement Learning with Gaussian Processes for Continuous Control: Sublinear Regret Bounds for Unbounded State Spaces](https://arxiv.org/abs/2603.08287)
   - Hamish Flynn, Joe Watson, Ingmar Posner, Jan Peters
   - Key: posterior sampling, Gaussian processes, continuous control, regret bounds
   - ExpEnv: continuous control
@@ -202,27 +202,27 @@ format:
   - Key: uncertainty exploration, RL from demonstrations, manipulation, world model
   - ExpEnv: robotic manipulation, sparse rewards
 
-- [Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://arxiv.org/pdf/2508.16949v6)
+- [Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://arxiv.org/abs/2508.16949)
   - Yang Zhou, Sunzhu Li, Shunyu Liu, Wenkai Fang, Kongcheng Zhang, Jiale Zhao, Jingwen Yang, Yihe Zhou, Jianwei Lv, Tongya Zheng, Hengtong Lu, Chen Wei, Xie Yan, Mingli Song
   - Key: rubric reward, exploration, LLM reasoning, RLVR
   - ExpEnv: LLM reasoning benchmarks
 
-- [BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://arxiv.org/pdf/2510.01180v1)
+- [BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://arxiv.org/abs/2510.01180)
   - Jian Hu, Mingjie Liu, Ximing Lu, Fang Wu, Zaid Harchaoui, Shizhe Diao, Yejin Choi, Pavlo Molchanov, Jun Yang, Jan Kautz, Yi Dong
   - Key: RLVR scaling, broad exploration, rollouts, LLM RL
   - ExpEnv: LLM reasoning benchmarks
 
-- [Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models](https://arxiv.org/pdf/2602.01698v3)
+- [Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models](https://arxiv.org/abs/2602.01698)
   - Wenhui Tan, Fiorenzo Parascandolo, Enver Sangineto, Jianzhong Ju, Zhenbo Luo, Qian Cao, Rita Cucchiara, Ruihua Song, Jian Luan
   - Key: latent exploration, post-training, decoding, reasoning models
   - ExpEnv: LLM reasoning benchmarks
 
-- [Estimating the Empowerment of Language Model Agents](https://arxiv.org/pdf/2509.22504v2)
+- [Estimating the Empowerment of Language Model Agents](https://arxiv.org/abs/2509.22504)
   - Jinyeop Song, Jeff Gore, Max Kleiman-Weiner
   - Key: empowerment, LLM agents, evaluation, information-theoretic
   - ExpEnv: LLM agent benchmarks
 
-- [Exploration Hacking: LLMs Can Learn to Resist RL Training](https://arxiv.org/pdf/2604.28182)
+- [Exploration Hacking: LLMs Can Learn to Resist RL Training](https://arxiv.org/abs/2604.28182)
   - Eyon Jang, Damon Falck, Joschka Cedric Braun, Nathalie Kirch, Achyutha Menon, Perusha Moodley, Scott Emmons, Roland S. Zimmermann, David Lindner
   - Key: LLM RL, exploration hacking, safety, alignment
   - ExpEnv: LLM RL post-training
